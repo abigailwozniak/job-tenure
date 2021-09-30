@@ -1,4 +1,3 @@
-# job-tenure
 Replication materials for MSW JHR paper on job tenure distribution.
 
 These materials can be used to reproduce the Tables and Figures in "Changing Stability in the U.S. Employment Relationships: A Tale of Two Tails" by Raven Molloy, Christopher L. Smith, and Abigail Wozniak and published in the Journal of Human Resources.
