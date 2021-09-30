@@ -1,0 +1,749 @@
+/* This is edited code from end of NLS Investigator-generated value labels file. */
+
+/* 1979 */  
+  rename R0000100 caseid
+  rename R0000600 age79
+  rename R0001300 age_intchk79
+  rename R0043600 cpsweekhrs79
+  rename R0046300 cpsind70_79
+  rename R0046400 cpsocc70_79
+  rename R0068710 tenure1_79
+  rename R0069010 tenure2_79
+  rename R0069310 tenure3_79
+  rename R0069610 tenure4_79
+  rename R0069910 tenure5_79
+  rename R0070500 job1hrs79
+  rename R0155400 totwages79
+  rename R0214700 race_eth79
+  rename R0214800 sex79
+  rename R0214900 esr_key79
+  rename R0215700 wkswk_pcy79
+  rename R0216100 sampweight79
+  rename R0216101 c_sampweight79
+  rename R0047010 cpshrp79
+  rename R0091710 hrp1_79
+  rename R0216020 jobsnum79
+  rename R0216700 hgcrev79
+  *rename R0070000 whyleft01_79
+  rename R0215400 wksuemp_sli79
+  rename R0215800 wksuemp_pcy79
+  rename R0215200 smsares79
+  rename R0216400 region79
+  rename R0217501 marstat79
+  
+/* 1980 */
+  rename R0260600 cpsweekhrs80
+  rename R0263300 cpsind70_80
+  rename R0263400 cpsocc70_80
+  rename R0312300 totwages80
+  rename R0333221 tenure1_80
+  rename R0337800 job1hrs80
+  rename R0344721 tenure2_80
+  rename R0356221 tenure3_80
+  rename R0367721 tenure4_80
+  rename R0379221 tenure5_80
+  rename R0406300 esr_key80
+  rename R0406401 hgcrev80
+  rename R0407200 wkswk_pcy80
+  rename R0405200 sampweight80
+  rename R0405201 c_sampweight80
+  rename R0263710 cpshrp80
+  rename R0338910 hrp1_80
+  rename R0407510 jobsnum80
+  rename R0332100 emp1previd80
+  rename R0332600 emp1previd2_80
+  rename R0337700 job1iscps80
+  *rename R0333300 whyleft01_80
+  rename R0406900 wksuemp_sli80
+  rename R0407400 wksuemp_pcy80  
+  rename R0393520 smsares80
+  rename R0405601 marstat80
+  rename R0405700 region80
+
+/* 1981 */
+  rename R0443600 cpsweekhrs81
+  rename R0446300 cpsind70_81
+  rename R0446400 cpsocc70_81
+  rename R0482600 totwages81
+  rename R0539410 tenure1_81
+  rename R0545600 job1hrs81
+  rename R0552510 tenure2_81
+  rename R0565610 tenure3_81
+  rename R0578710 tenure4_81
+  rename R0591810 tenure5_81
+  rename R0618200 AFQT_1_81
+  rename R0618300 AFQT_2_81
+  rename R0618301 AFQT_3_81
+  rename R0618800 esr_key81
+  rename R0618901 hgcrev81
+  rename R0645800 wkswk_pcy81
+  rename R0614600 sampweight81
+  rename R0614601 c_sampweight81
+  rename R0446810 cpshrp81
+  rename R0546610 hrp1_81
+  rename R0646610 jobsnum81
+  rename R0537900 emp1previd81
+  rename R0538400 emp1previd2_81
+  rename R0545500 job1iscps81
+  *rename R0539500 whyleft01_81
+  rename R0645900 wksuemp_sli81
+  rename R0646400 wksuemp_pcy81
+  rename R0602810 region81
+  rename R0618601 marstat81
+  rename R0647000 smsares81
+
+/* 1982 */
+  rename R0693700 cpsweekhrs82
+  rename R0702000 cpsind70_82
+  rename R0702100 cpsocc70_82
+  rename R0782101 totwages82
+  rename R0833810 tenure1_82
+  rename R0839900 job1hrs82
+  rename R0846910 tenure2_82
+  rename R0860010 tenure3_82
+  rename R0873110 tenure4_82
+  rename R0886210 tenure5_82
+  rename R0896900 wkswk_pcy82
+  rename R0898201 hgcrev82
+  rename R0898500 esr_key82
+  rename R0896700 sampweight82
+  rename R0896701 c_sampweight82
+  rename R0702510 cpshrp82
+  rename R0841010 hrp1_82
+  rename R0897720 jobsnum82
+  rename R0832300 emp1previd82
+  rename R0832800 emp1previd2_82
+  rename R0840100 job1iscps82
+  *rename R0833900 whyleft01_82
+  rename R0897000 wksuemp_pcy82
+  rename R0897400 wksuemp_sli82
+  rename R0897900 smsares82
+  rename R0897910 region82
+  rename R0898401 marstat82
+ 
+/* 1983 */ 
+  rename R0936700 cpsweekhrs83
+  rename R0944900 cpsind70_83
+  rename R0945000 cpsocc70_83
+  rename R0945200 cpsind80_83
+  rename R0945300 cpsocc80_83
+  rename R1024001 totwages83
+  rename R1081010 tenure1_83
+  rename R1087300 job1hrs83
+  rename R1094210 tenure2_83
+  rename R1107410 tenure3_83
+  rename R1120610 tenure4_83
+  rename R1133810 tenure5_83
+  rename R1145001 hgcrev83
+  rename R1145300 wkswk_pcy83
+  rename R1144400 sampweight83
+  rename R1144401 c_sampweight83
+  rename R1144700 esr_key83
+  rename R0945610 cpshrp83
+  rename R1088210 hrp1_83
+  rename R1146320 jobsnum83
+  rename R1079500 emp1previd83
+  rename R1080000 emp1previd2_83
+  rename R1087200 job1iscps83  
+  *rename R1081100 whyleft01_83
+  rename R1145400 wksuemp_pcy83
+  rename R1145900 wksuemp_sli83
+  rename R1144800 region83
+  rename R1144901 marstat83
+  rename R1146400 smsares83
+
+
+/* 1984 */
+  rename R1247000 cpsweekhrs84
+  rename R1255300 cpsind70_84
+  rename R1255400 cpsocc70_84
+  rename R1255600 cpsind80_84
+  rename R1255700 cpsocc80_84
+  rename R1410701 totwages84
+  rename R1456710 tenure1_84
+  rename R1463000 job1hrs84
+  rename R1469810 tenure2_84
+  rename R1482910 tenure3_84
+  rename R1496010 tenure4_84
+  rename R1509110 tenure5_84
+  rename R1519900 esr_key84
+  rename R1520201 hgcrev84
+  rename R1520500 wkswk_pcy84
+  rename R1519600 sampweight84
+  rename R1519601 c_sampweight84
+  rename R1256010 cpshrp84
+  rename R1463910 hrp1_84
+  rename R1521520 jobsnum84
+  rename R1455200 emp1previd84
+  rename R1455700 emp1previd2_84
+  rename R1462900 job1iscps84
+  *rename R1456800 whyleft01_84
+  rename R1520600 wksuemp_pcy84
+  rename R1521100 wksuemp_sli84
+  rename R1520000 region84
+  rename R1520101 marstat84
+  rename R1521700 smsares84
+
+/* 1985 */
+  rename R1642200 cpsweekhrs85
+  rename R1650100 cpsind70_85
+  rename R1650200 cpsocc70_85
+  rename R1650400 cpsind80_85
+  rename R1650500 cpsocc80_85
+  rename R1778501 totwages85
+  rename R1803510 tenure1_85
+  rename R1809800 job1hrs85
+  rename R1816210 tenure2_85
+  rename R1828910 tenure3_85
+  rename R1841610 tenure4_85
+  rename R1854310 tenure5_85
+  rename R1890901 hgcrev85
+  rename R1891200 wkswk_pcy85
+  rename R1890200 sampweight85
+  rename R1890201 c_sampweight85
+  rename R1890600 esr_key85
+  rename R1650810 cpshrp85
+  rename R1810710 hrp1_85  
+  rename R1892220 jobsnum85
+  rename R1802000 emp1previd85
+  rename R1802500 emp1previd2_85
+  rename R1809700 job1iscps85
+  *rename R1803600 whyleft01_85
+  rename R1891300 wksuemp_pcy85
+  rename R1891800 wksuemp_sli85  
+  rename R1890700 region85
+  rename R1890801 marstat85
+  rename R1892400 smsares85
+
+/* 1986 */
+  rename R1914800 cpsweekhrs86
+  rename R1922700 cpsind70_86
+  rename R1922800 cpsocc70_86
+  rename R1923000 cpsind80_86
+  rename R1923100 cpsocc80_86
+  rename R2141601 totwages86
+  rename R2165110 tenure1_86
+  rename R2171500 job1hrs86
+  rename R2178710 tenure2_86
+  rename R2192310 tenure3_86
+  rename R2205910 tenure4_86
+  rename R2219510 tenure5_86
+  rename R2257700 esr_key86
+  rename R2258001 hgcrev86
+  rename R2258300 wkswk_pcy86
+  rename R2257300 sampweight86
+  rename R2257301 c_sampweight86
+  rename R1923410 cpshrp86
+  rename R2172410 hrp1_86  
+  rename R2259320 jobsnum86
+  rename R2163600 emp1previd86
+  rename R2164100 emp1previd2_86
+  rename R2171400 job1iscps86
+  *rename R2165200 whyleft01_86
+  rename R2258400 wksuemp_pcy86
+  rename R2258900 wksuemp_sli86  
+  rename R2257800 region86
+  rename R2257901 marstat86
+  rename R2259500 smsares86
+
+/* 1987 */
+  rename R2310900 cpsweekhrs87
+  rename R2317500 cpsind70_87
+  rename R2317600 cpsocc70_87
+  rename R2317800 cpsind80_87
+  rename R2317900 cpsocc80_87
+  rename R2350301 totwages87
+  rename R2372510 tenure1_87
+  rename R2376300 job1hrs87
+  rename R2383810 tenure2_87
+  rename R2395110 tenure3_87
+  rename R2406410 tenure4_87
+  rename R2417710 tenure5_87
+  rename R2445100 esr_key87
+  rename R2445401 hgcrev87
+  rename R2445700 wkswk_pcy87
+  rename R2444500 sampweight87
+  rename R2444501 c_sampweight87
+  rename R2318210 cpshrp87
+  rename R2377210 hrp1_87  
+  rename R2446810 jobsnum87  
+  rename R2370700 emp1previd87
+  rename R2371200 emp1previd2_87
+  rename R2376200 job1iscps87
+  *rename R2372600 whyleft01_87
+  rename R2445800 wksuemp_pcy87
+  rename R2446300 wksuemp_sli87  
+  rename R2445200 region87
+  rename R2445301 marstat87
+  rename R2447000 smsares87
+
+/* 1988 */
+  rename R2518800 cpsweekhrs88
+  rename R2525300 cpsind70_88
+  rename R2525400 cpsocc70_88
+  rename R2525600 cpsind80_88
+  rename R2525700 cpsocc80_88
+  rename R2722501 totwages88
+  rename R2763410 tenure1_88
+  rename R2770900 job1hrs88
+  rename R2776310 tenure2_88
+  rename R2789210 tenure3_88
+  rename R2802110 tenure4_88
+  rename R2815010 tenure5_88
+  rename R2870600 esr_key88
+  rename R2871101 hgcrev88
+  rename R2871500 wkswk_pcy88
+  rename R2870000 sampweight88
+  rename R2870001 c_sampweight88
+  rename R2526010 cpshrp88
+  rename R2772210 hrp1_88  
+  rename R2872610 jobsnum88  
+  rename R2761500 emp1previd88
+  rename R2762100 emp1previd2_88
+  rename R2770800 job1iscps88
+  *rename R2763500 whyleft01_88
+  rename R2871600 wksuemp_pcy88
+  rename R2872100 wksuemp_sli88  
+  rename R2870800 region88
+  rename R2871000 marstat88
+  rename R2872800 smsares88  
+
+/* 1989 */
+  rename R2917700 cpsweekhrs89
+  rename R2924300 cpsind70_89
+  rename R2924400 cpsocc70_89
+  rename R2924600 cpsind80_89
+  rename R2924700 cpsocc80_89
+  rename R2971401 totwages89
+  rename R3005210 tenure1_89
+  rename R3012700 job1hrs89
+  rename R3018310 tenure2_89
+  rename R3031410 tenure3_89
+  rename R3044510 tenure4_89
+  rename R3057610 tenure5_89
+  rename R3074300 esr_key89
+  rename R3074801 hgcrev89
+  rename R3075200 wkswk_pcy89
+  rename R3073800 sampweight89
+  rename R3073801 c_sampweight89
+  rename R2925010 cpshrp89  
+  rename R3014010 hrp1_89
+  rename R3076800 jobsnum89
+  rename R3003300 emp1previd89
+  rename R3003900 emp1previd2_89
+  rename R3012600 job1iscps89
+  *rename R3005300 whyleft01_89
+  rename R3075300 wksuemp_pcy89
+  rename R3075800 wksuemp_sli89
+  rename R3074500 region89
+  rename R3074700 marstat89
+  rename R3076500 smsares89  
+
+/* 1990 */
+  rename R3119900 cpsweekhrs90
+  rename R3127000 cpsind70_90
+  rename R3127100 cpsocc70_90
+  rename R3127300 cpsind80_90
+  rename R3127400 cpsocc80_90
+  rename R3279401 totwages90
+  rename R3332610 tenure1_90
+  rename R3340100 job1hrs90
+  rename R3346610 tenure2_90
+  rename R3360610 tenure3_90
+  rename R3374610 tenure4_90
+  rename R3388610 tenure5_90
+  rename R3401000 esr_key90
+  rename R3401501 hgcrev90
+  rename R3401900 wkswk_pcy90
+  rename R3400200 sampweight90
+  rename R3400201 c_sampweight90  
+  rename R3127800 cpshrp90
+  rename R3341500 hrp1_90
+  rename R3403500 jobsnum90
+  rename R3330700 emp1previd90
+  rename R3331300 emp1previd2_90
+  rename R3340000 job1iscps90
+  *rename R3332700 whyleft01_90
+  rename R3402000 wksuemp_pcy90
+  rename R3402500 wksuemp_sli90
+  rename R3401200 region90
+  rename R3401400 marstat90
+  rename R3403200 smsares90
+  
+
+/* 1991 */
+  rename R3515600 cpsweekhrs91
+  rename R3522700 cpsind70_91
+  rename R3522800 cpsocc70_91
+  rename R3523000 cpsind80_91
+  rename R3523100 cpsocc80_91
+  rename R3559001 totwages91
+  rename R3597610 tenure1_91
+  rename R3604400 job1hrs91
+  rename R3609710 tenure2_91
+  rename R3621810 tenure3_91
+  rename R3633910 tenure4_91
+  rename R3646010 tenure5_91
+  rename R3656400 esr_key91
+  rename R3656901 hgcrev91
+  rename R3657300 wkswk_pcy91
+  rename R3655800 sampweight91
+  rename R3655801 c_sampweight91
+  rename R3523500 cpshrp91
+  rename R3605800 hrp1_91  
+  rename R3658900	jobsnum91
+  rename R3595700 emp1previd91
+  rename R3596300 emp1previd2_91
+  rename R3604300 job1iscps91  
+  *rename R3597700 whyleft01_91
+  rename R3657400 wksuemp_pcy91
+  rename R3657900 wksuemp_sli91
+  rename R3656600 region91
+  rename R3656800 marstat91
+  rename R3658600 smsares91
+
+/* 1992 */
+  rename R3720500 cpsweekhrs92
+  rename R3727700 cpsind70_92
+  rename R3727800 cpsocc70_92
+  rename R3728000 cpsind80_92
+  rename R3728100 cpsocc80_92
+  rename R3897101 totwages92
+  rename R3947800 tenure1_92
+  rename R3954600 job1hrs92
+  rename R3960000 tenure2_92
+  rename R3972200 tenure3_92
+  rename R3984400 tenure4_92
+  rename R3996600 tenure5_92
+  rename R4006900 esr_key92
+  rename R4007401 hgcrev92
+  rename R4007800 wkswk_pcy92
+  rename R4006300 sampweight92
+  rename R4006301 c_sampweight92
+  rename R3728500 cpshrp92
+  rename R3956000 hrp1_92
+  rename R4009400 jobsnum92    
+  rename R3945800 emp1previd92
+  rename R3946400 emp1previd2_92
+  rename R3954500 job1iscps92     
+  *rename R3947900 whyleft01_92
+  rename R4007900 wksuemp_pcy92
+  rename R4008400 wksuemp_sli92  
+  rename R4007100 region92
+  rename R4007300 marstat92
+  rename R4009100 smsares92
+
+/* 1993 */
+  rename R4182000 cpsind70_93
+  rename R4182100 cpsocc70_93
+  rename R4182600 cpsweekhrs93
+  rename R4193200 job1hrs93
+  rename R4193700 cpsocc80_93
+  rename R4193800 cpsind80_93
+  rename R4295101 totwages93
+  rename R4416300 tenure1_93
+  rename R4416400 tenure2_93
+  rename R4416500 tenure3_93
+  rename R4416600 tenure4_93
+  rename R4416700 tenure5_93
+  rename R4418501 hgcrev93
+  rename R4418900 wkswk_pcy93
+  rename R4417400 sampweight93
+  rename R4417401 c_sampweight93
+  rename R4416800 cpshrp93  
+  rename R4416900 hrp1_93  
+  rename R4420500 jobsnum93
+  rename R4418000	esr_key93
+  rename R4193100 job1iscps93
+  rename R4198800 emp1previd93
+  *rename R4188000 whyleft01_93
+  rename R4419000 wksuemp_pcy93
+  rename R4419500 wksuemp_sli93
+  rename R4418200 region93
+  rename R4418400 marstat93
+  rename R4420200 smsares93 
+ 
+ /* 1994 */
+  rename R4545900 cpsweekhrs94
+  rename R4582900 job1hrs94
+  rename R4587901 cpsocc80_94
+  rename R4587902 cpsind80_94
+  rename R4587903 cpsind70_94
+  rename R4587904 cpsocc70_94
+  rename R4982801 totwages94
+  rename R5079300 tenure1_94
+  rename R5079400 tenure2_94
+  rename R5079500 tenure3_94
+  rename R5079600 tenure4_94
+  rename R5079700 tenure5_94
+  rename R5081000 esr_key94
+  rename R5081900 wkswk_pcy94
+  rename R5103900 hgcrev94
+  rename R5080400 sampweight94
+  rename R5080401 c_sampweight94
+  rename R5079800 cpshrp94  
+  rename R5079900 hrp1_94
+  rename R5083500 jobsnum94
+  rename R4575400 emp1previd94
+  *rename R4576200 whyleft01_94
+  rename R5082000 wksuemp_pcy94
+  rename R5082500 wksuemp_sli94
+  rename R5081200 region94
+  rename R5081400 marstat94
+  rename R5083200 smsares94  
+  
+/* Rename statements for month of interview, to track continuity in survey */
+
+rename R0172500	minterview79
+rename R0329200	minterview80
+rename R0530700	minterview81
+rename R0809900	minterview82
+rename R1045700	minterview83
+rename R1427500	minterview84
+rename R1794600	minterview85
+rename R2156200	minterview86
+rename R2365700	minterview87
+rename R2742500	minterview88
+rename R2986100	minterview89
+rename R3302500	minterview90
+rename R3573400	minterview91
+rename R3917600	minterview92
+rename R4100200	minterview93
+rename R4500201	minterview94
+  
+  
+/* Rename statements for current employment on job1, reason left by job, and previous emp id by job */
+
+rename R0068000	QES2301_79
+rename R0070000	QES23A01_79
+rename R0070100	QES23A02_79
+rename R0070200	QES23A03_79
+rename R0070300	QES23A04_79
+rename R0070400	QES23A05_79
+
+rename R0333100	QES2301_80
+rename R0333300	QES23A01_80
+rename R0344800	QES23A02_80
+rename R0356300	QES23A03_80
+rename R0367800	QES23A04_80
+rename R0379300	QES23A05_80
+
+rename R0539100	QES2301_81
+rename R0539500	QES23A01_81
+rename R0552600	QES23A02_81
+rename R0565700	QES23A03_81
+rename R0578800	QES23A04_81
+rename R0591900	QES23A05_81
+
+rename R0833500	QES2301_82
+rename R0833900	QES23A01_82
+rename R0847000	QES23A02_82
+rename R0860100	QES23A03_82
+rename R0873200	QES23A04_82
+rename R0886300	QES23A05_82
+
+rename R1080700	QES2301_83
+rename R1081100	QES23A01_83
+rename R1094300	QES23A02_83
+rename R1107500	QES23A03_83
+rename R1120700	QES23A04_83
+rename R1133900	QES23A05_83
+
+rename R1456400	QES2301_84
+rename R1456800	QES23A01_84
+rename R1469900	QES23A02_84
+rename R1483000	QES23A03_84
+rename R1496100	QES23A04_84
+rename R1509200	QES23A05_84
+
+rename R1803200	QES2301_85
+rename R1803600	QES23A01_85
+rename R1816300	QES23A02_85
+rename R1829000	QES23A03_85
+rename R1841700	QES23A04_85
+rename R1854400	QES23A05_85
+
+rename R2164800	QES2301_86
+rename R2165200	QES23A01_86
+rename R2178800	QES23A02_86
+rename R2192400	QES23A03_86
+rename R2206000	QES23A04_86
+rename R2219600	QES23A05_86
+
+rename R2372200	QES2301_87
+rename R2372600	QES23A01_87
+rename R2383900	QES23A02_87
+rename R2395200	QES23A03_87
+rename R2406500	QES23A04_87
+rename R2417800	QES23A05_87
+
+rename R2763100	QES2301_88
+rename R2763500	QES23A01_88
+rename R2776400	QES23A02_88
+rename R2789300	QES23A03_88
+rename R2802200	QES23A04_88
+rename R2815100	QES23A05_88
+
+rename R3004900	QES2301_89
+rename R3005300	QES23A01_89
+rename R3018400	QES23A02_89
+rename R3031500	QES23A03_89
+rename R3044600	QES23A04_89
+rename R3057700	QES23A05_89
+
+rename R3332300	QES2301_90
+rename R3332700	QES23A01_90
+rename R3346700	QES23A02_90
+rename R3360700	QES23A03_90
+rename R3374700	QES23A04_90
+rename R3388700	QES23A05_90
+
+rename R3597300	QES2301_91
+rename R3597700	QES23A01_91
+rename R3609800	QES23A02_91
+rename R3621900	QES23A03_91
+rename R3634000	QES23A04_91
+rename R3646100	QES23A05_91
+
+rename R3947400	QES2301_92
+rename R3947900	QES23A01_92
+rename R3960100	QES23A02_92
+rename R3972300	QES23A03_92
+rename R3984500	QES23A04_92
+rename R3996700	QES23A05_92
+
+rename R4187900	QES2301_93
+rename R4188000	QES23A01_93
+rename R4200900	QES23A02_93
+rename R4208500	QES23A03_93
+rename R4215500	QES23A04_93
+rename R4223100	QES23A05_93
+
+rename R4576100	QES2301_94
+rename R4576200	QES23A01_94
+rename R4621600	QES23A02_94
+rename R4664800	QES23A03_94
+rename R4706400	QES23A04_94
+rename R4741200	QES23A05_94
+
+rename R0343600	emp2previd80
+rename R0551000	emp2previd81
+rename R0845400	emp2previd82
+rename R1092700	emp2previd83
+rename R1468300	emp2previd84
+rename R1814700	emp2previd85
+rename R2177200	emp2previd86
+rename R2382000	emp2previd87
+rename R2774400	emp2previd88
+rename R3016400	emp2previd89
+rename R3344700	emp2previd90
+rename R3607800	emp2previd91
+rename R3958000	emp2previd92
+rename R4206600	emp2previd93
+rename R4620800	emp2previd94
+
+rename R0355100	emp3previd80
+rename R0564100	emp3previd81
+rename R0858500	emp3previd82
+rename R1105900	emp3previd83
+rename R1481400	emp3previd84
+rename R1827400	emp3previd85
+rename R2190800	emp3previd86
+rename R2393300	emp3previd87
+rename R2787300	emp3previd88
+rename R3029500	emp3previd89
+rename R3358700	emp3previd90
+rename R3619900	emp3previd91
+rename R3970200	emp3previd92
+rename R4213800	emp3previd93
+rename R4664000	emp3previd94
+
+rename R0366600	emp4previd80
+rename R0577200	emp4previd81
+rename R0871600	emp4previd82
+rename R1119100	emp4previd83
+rename R1494500	emp4previd84
+rename R1840100	emp4previd85
+rename R2204400	emp4previd86
+rename R2404600	emp4previd87
+rename R2800200	emp4previd88
+rename R3042600	emp4previd89
+rename R3372700	emp4previd90
+rename R3632000	emp4previd91
+rename R3982400	emp4previd92
+rename R4221400	emp4previd93
+rename R4705700	emp4previd94
+
+rename R0378100	emp5previd80
+rename R0590300	emp5previd81
+rename R0884700	emp5previd82
+rename R1132300	emp5previd83
+rename R1507600	emp5previd84
+rename R1852800	emp5previd85
+rename R2218000	emp5previd86
+rename R2415900	emp5previd87
+rename R2813100	emp5previd88
+rename R3055700	emp5previd89
+rename R3386700	emp5previd90
+rename R3644100	emp5previd91
+rename R3994600	emp5previd92
+rename R4228600	emp5previd93
+rename R4740500	emp5previd94
+
+/* Rename for class of worker on job 1 and current enrollment */
+
+rename E7820100	emp1class_79	
+rename E7830100	emp1class_80	
+rename E7840100	emp1class_81	
+rename E7850100	emp1class_82	
+rename E7860100	emp1class_83	
+rename E7870100	emp1class_84	
+rename E7880100	emp1class_85	
+rename E7890100	emp1class_86	
+rename E7900100	emp1class_87	
+rename E7910100	emp1class_88	
+rename E7920100	emp1class_89	
+rename E7930100	emp1class_90	
+rename E7940100	emp1class_91	
+rename E7950100	emp1class_92	
+rename E7960100	emp1class_93	
+rename E7970100	emp1class_94
+ 
+rename R0015600	inschool_79
+rename R0228500	inschool_80
+rename R0416800	inschool_81
+rename R0663900	inschool_82
+rename R0905300	inschool_83
+rename R1205200	inschool_84
+rename R1604500	inschool_85
+rename R1905000	inschool_86
+rename R2305900	inschool_87
+rename R2508400	inschool_88
+rename R2907500	inschool_89
+rename R3109600	inschool_90
+rename R3509600	inschool_91
+rename R3709600	inschool_92
+rename R4137400	inschool_93
+rename R4526000	inschool_94
+
+/* Rename for employment on job 2 */
+
+rename R0068100	QES2302_79
+rename R0344600	QES2302_80
+rename R0552200	QES2302_81
+rename R0846600	QES2302_82
+rename R1093900	QES2302_83
+rename R1469500	QES2302_84
+rename R1815900	QES2302_85
+rename R2178400	QES2302_86
+rename R2383500	QES2302_87
+rename R2776000	QES2302_88
+rename R3018000	QES2302_89
+rename R3346300	QES2302_90
+rename R3609400	QES2302_91
+rename R3959600	QES2302_92
+rename R4200800	QES2302_93
+rename R4621500	QES2302_94
+
+
+      
