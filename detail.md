@@ -2,16 +2,16 @@
 
 *The repository is structured as follows:*
 
-- **\SIPP Materials**
-  - Contains the do-files to reproduce Table 
-- **\GSS_Materials**
-  - Contains the do-files to reproduce Table 
-- **\NLSY_Materials**
-  - Contains the do-files to reproduce Tables 
-- **\CPS_Materials**
-  - Contains the do-files to reproduce 
-- **\PSID_Materials**
-  - Contains the do-files that reproduce Tables 2, 4, 7, A6, and Figures 6, 7, 10, 12, and A5. The raw CPS data can be obtained from IPUMS, or may be available upon request.
+- **SIPP Materials**
+  - Contains the do-files to reproduce Figures 1, 5, 9, and 11; Table 5. 
+- **GSS Materials**
+  - Contains the do-files to reproduce the GSS columns in Table 6
+- **NLSY_Materials**
+  - Contains the do-files to reproduce Online Appendix Figure 4 and Online Appendix Table 3
+- **QEMP Materials**
+  - Contains the do-files that reproduce the QEMP columns of Table 6
+- **CPS + other data Materials**
+  - Contains the do-files that reproduce all other figures and tables
 
 ## SIPP Materials
 
@@ -32,4 +32,56 @@ For Table 5: Decomposition of the change in the aggregate job-to-job transition 
 9.	The file sipp96ee.do uses the 1996-08 panels (tempsipp2.dta) and calculates job-to-job flows by tenure category.  It then calculates counterfactual transition rates holding either the share of each tenure category at its pre-2000 level or the fraction of job-to-job flows for each tenure category at its pre-2000 level.  The actual and counterfactual job-to-job transition rates are then reported to make the table.
 
 
+## GSS Materials
+
+GSS Results for Table 6 come from read_gss_jobtenure.do and are posted in the associated log file. Results were pasted into Word tables.
+•	Raw GSS data were downloaded from https://gssdataexplorer.norc.org/. 
+•	Results for the GSS columns of Table 6 are in 567-605 of read_gss_jobtenure.log.
+•	Note that results for the QEMP columns of T6 come from Raven’s files. 
+
+
+## NLSY Materials 
+
+•	These are make_tenure_whyleft.do (for 1979) and make_tenure_whyleft_97.do (for 1997)
+•	These two do files process the nearly raw NLSY data for their respective cohorts. The raw data were downloaded from https://www.nlsinfo.org/investigator/pages/login. 
+•	Results are contained in the log files and were pasted into word tables/excel.
+•	Results for AF4 are in lines 3524 to 3540 of make_tenure_whyleft.log (for ’79) and of 2465 to 2478 for make_tenure_whyleft_97.log (for ’97).
+•	Results for AT3 are in lines 3495 to 3505 of make_tenure_whyleft.log (for ’79) and of 2415 to 2424 for make_tenure_whyleft_97.log (for ’97). 
+
+## QEMP Materials
+
+Files for replication of the QEMP columns of Table 6
+1.	The data from the 1960s and 1970s are from Quality of Employment surveys, which can be found on the ICPSR website (icpsr.org), study numbers 3507, 3510, and 7689.
+2.	The file qemp.do reads in the raw data from all 3 surveys, appends them, and calculates the averages reported in columns labeled “QEMP 1970s” in Table 6.
+
+
+## CPS + other data materials ##
+
+The tables and figures are generated using the correspondingly named stata do files. 
+
+As noted in datanotes-cps.txt, we use the NBER extract for 1983, and ICPSR extracts for 1987 and 1991.  The files dataclean_1983, _1987, and _1991 process these data.  For 1996 and later, we use data provided by IPUMS.
+
+The following figures and tables are self-contained within the corresponding do file and do not need auxillary data, except for the CPS microdata.
+
+- Figures 1, 2, Append 3; Table 1
+
+The following figures and tables require a crosswalk between the ind1990 and occ1990 variables provided by IPUMS, and the ind/occ variables in the CPS microdata. This file is provided in the replication package and is called: ind-occ-asec.dta 
+
+- Figures 3, 4, 7, 10, Append 1, Append 2; Tables 2 and 4
+
+The following figures and tables require estimates of cohort average long tenure and separation rates for various ages. Cohort average separation rates are produced in cohort-effects-separations.do and -byage.do, and cohort average tenure rates are produced in cohort-effects-longtenure.do.   
+
+- Figures 6, 8; Table 3
+
+The following tables and figures require summary data from the SIPP, possibly in addition to CPS data.  See elsewhere in replication package for information on processing SIPP data.
+
+- Figures 5, 9, 11, Append 5, Append 6
+
+The following figure requires summary data from the GSS.  See elsewhere in replication package for information on processing GSS data.
+
+- Figure 12
+
+The following figure requires summary data from the NLSY.  See elsewhere in replication package for information on processing NLSY data.
+
+- Append Figure 4
 
