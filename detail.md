@@ -42,11 +42,11 @@ GSS Results for Table 6 come from read_gss_jobtenure.do and are posted in the as
 
 ## NLSY Materials 
 
-•	These are make_tenure_whyleft.do (for 1979) and make_tenure_whyleft_97.do (for 1997).
-•	These two do files process the nearly NLSY data for their respective cohorts, using nlsy79_1979to1994.dta and nlsy97_1997to2011.dta. The raw data were downloaded from https://www.nlsinfo.org/investigator/pages/login. After raw data were downloaded, basic cleaning was done using the code in makedata_nlsy79.do. The do and log files from makedata_nlsy79.do are available in the repository. Makedata_nlsy79.do also calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do. The first two of those three were provided by the NLS Investigator website above and can be used to replicated the raw extracts. The rename file was constructed by the authors to quickly process renaming the raw NLSY variables. Analogous data construction files are also posted for the 97 extracts. 
-•	Results are contained in the log files and were pasted into word tables/excel.
-•	Results for AF4 are in lines 3524 to 3540 of make_tenure_whyleft.log (for ’79) and of 2465 to 2478 for make_tenure_whyleft_97.log (for ’97).
-•	Results for AT3 are in lines 3495 to 3505 of make_tenure_whyleft.log (for ’79) and of 2415 to 2424 for make_tenure_whyleft_97.log (for ’97). 
+- These are make_tenure_whyleft.do (for 1979) and make_tenure_whyleft_97.do (for 1997).
+-These two do files process the nearly NLSY data for their respective cohorts, using nlsy79_1979to1994.dta and nlsy97_1997to2011.dta. The raw data were downloaded from https://www.nlsinfo.org/investigator/pages/login. After raw data were downloaded, basic cleaning was done using the code in makedata_nlsy79.do. The do and log files from makedata_nlsy79.do are available in the repository. Makedata_nlsy79.do also calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do. The first two of those three were provided by the NLS Investigator website above and can be used to replicated the raw extracts. The rename file was constructed by the authors to quickly process renaming the raw NLSY variables. Analogous data construction files are also posted for the 97 extracts. 
+- Results are contained in the log files and were pasted into word tables/excel.
+- Results for AF4 are in lines 3524 to 3540 of make_tenure_whyleft.log (for ’79) and of 2465 to 2478 for make_tenure_whyleft_97.log (for ’97).
+- Results for AT3 are in lines 3495 to 3505 of make_tenure_whyleft.log (for ’79) and of 2415 to 2424 for make_tenure_whyleft_97.log (for ’97). 
 
 
 ## QEMP Materials
