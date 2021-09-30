@@ -1,0 +1,38 @@
+dictionary using ~/data_house/qemp77/07689-0001-Data.txt {
+  _column(1124) hhrel %2.0f
+*  _column(57) secimp %1.0f
+  _column(84) occ %3.0f
+  _column(87) ind %3.0f
+  _column(113) selfemp %1.0f
+  _column(153) jobten %1.0f
+  _column(162) firmsize %1.0f
+  _column(151) empten %1.0f
+*  _column(286) jobflex %1.0f
+  _column(154) jobsteady %1.0f
+  _column(212) hours %3.0f
+  _column(542) inc %5.0f
+*  _column(548) incr %5.0f
+*  _column(557) primary %1.0f
+  _column(559) faminc %5.0f
+  _column(572) famincb %5.0f
+  _column(842) njlook %1.0f
+  _column(728) union %1.0f
+  _column(912) njeasy %1.0f
+*  _column(738) promotion %1.0f
+  _column(61) jobsec %1.0f
+  _column(839) jobsat %1.0f
+  _column(920) marital %1.0f
+  _column(925) yrborn %2.0f
+  _column(938) yrbornb %2.0f
+  _column(927) educ %2.0f
+  _column(940) educb %2.0f
+  _column(1110) sex %1.0f
+  _column(1111) race %1.0f
+}
+
+/*
+v700 willing to move more than 100 miles to take a better job
+v701-703 why not?
+v704 what if out of work and offered a job more than 100 miles away
+v705-707 why not?
+*/
