@@ -2,6 +2,7 @@
 
 *The repository is structured as follows:*
 
+- **Overview**
 - **SIPP Materials**
   - Contains the do-files to reproduce Figures 1, 5, 9, and 11; Table 5. 
 - **GSS Materials**
@@ -13,14 +14,24 @@
 - **CPS + other data Materials**
   - Contains the do-files that reproduce all other figures and tables
 
+## Overview
+- Note all the data used for this paper is publically available, and none of it is in this depository. Go to the websites listed below to download the data.
+- Each section is for a data set and its corresponding materials. Each section describes where to download data and which files to clean it and create figures / tables.
+- Some figures and tables use more than one data set.
+
+
 ## SIPP Materials
 
-- Files for replication of SIPP analysis
-  - The SIPP data files were all downloaded from the NBER website: https://www.nber.org/research/data/survey-income-and-program-participation-sipp.  This site also posts Stata dictionaries that were used to read in the raw data.
-  - sipp96.do reads in the 1996-2008 panels and creates an appended dataset with data from 1996 to 2013 named sipp9608.dta.  It also creates the file tempsipp2.dta as an intermediate step.  The file sipp8689.do reads in the 1986-89 panels and creates an appended dataset tempsipp80.dta.  The file sipp9093.do reads in the 1990-93 panels and creates the appended dataset tempsipp.dta
-- For Figure 1: mean and median tenure by year
-  - The file sipp8689ten.do takes tempsipp80.dta, calculates mean and median tenure by year, and saves the results in fig1sipp8689.dta.
-  - The file fig1sipp.do starts with sipp9609.dta, calculates mean and median tenure by year, appends fig1sipp8689.dta, and saves the resulting data in fig1sipp.dta.
+- Downloading the data
+  - The SIPP data files and dictionaries used to read in the raw data were all downloaded from the NBER website: https://www.nber.org/research/data/survey-income-and-program-participation-sipp. 
+- Cleaning the data
+  - sipp96.do reads in the 1996-2008 panels and creates an appended dataset with data from 1996 to 2013 named sipp9608.dta.  It also creates the file tempsipp2.dta as an intermediate step.  
+  - The file sipp8689.do reads in the 1986-89 panels and creates an appended dataset tempsipp80.dta.  
+  - The file sipp9093.do reads in the 1990-93 panels and creates the appended dataset tempsipp.dta
+- Figures and tables
+  - Figure 1: mean and median tenure by year
+    - The file sipp8689ten.do takes tempsipp80.dta, calculates mean and median tenure by year, and saves the results in fig1sipp8689.dta.
+    - The file fig1sipp.do starts with sipp9609.dta, calculates mean and median tenure by year, appends fig1sipp8689.dta, and saves the resulting data in fig1sipp.dta.
 - For Figure 5: Retention rates for men
   - The file sipp96nosep8.do starts with sipp9608.dta, calculates the retention rate for men with 20+ years of tenure and saves the average retention rate over time in sipp96nosep8.dta.
   - The file sippeu_old.do calculates the fraction of employed men who transition from employed to unemployed and from employed to not-in-labor force and saves the results in sippeu_old.dta.  It uses data from the 1986-89 panels (tempsipp80.dta), the 1990-93 panels (tempsipp.dta) and the 1996-2008 panels (tempsipp2.dta).  The line labeled “Fraction remaining employed, age 50-64” shows 1 –minus the sum of these two transition rates.
