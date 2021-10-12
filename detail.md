@@ -2,7 +2,7 @@
 
 *The repository is structured as follows:*
 
-- **Overview**
+
 - **SIPP_Materials**
   - Contains the do-files to reproduce table 5 and the data used in Figures 1, 5, 9, and 11; Online Appendix Figures 5,6. Note the CPS Materials section has the do-files that uses the data to create the Figures themselves.
 - **GSS_Materials**
@@ -14,10 +14,7 @@
 - **CPS_Materials**
   - Contains the do-files that reproduce Figures 1-12, Tables 1-4, and Online Appendix Figures 1-6.
 
-## Overview
-- Note all the data used for this paper is publically available, and none of it is in this depository.
-- Each section is for a data set and its corresponding materials. Each section describes where to download data and which files to clean it and create figures / tables.
-- Some figures and tables use more than one data set.
+
 
 
 ## SIPP Materials
