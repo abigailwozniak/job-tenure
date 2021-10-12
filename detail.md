@@ -4,7 +4,8 @@
 
 
 - **SIPP_Materials**
-  - Contains the do-files to reproduce table 5 and the data used in Figures 1, 5, 9, and 11; Online Appendix Figures 5,6. Note the CPS Materials section has the do-files that uses the data to create the Figures themselves.
+  - Contains the do-files to reproduce Table 5 and the data used in Figures 1, 5, 9, and 11; Online Appendix Figures 5,6. 
+  - Note that the CPS Materials section has the do-files that uses the data to create the Figures themselves.
 - **GSS_Materials**
   - Contains the do-files to reproduce the GSS columns in Table 6
 - **NLSY_Materials**
@@ -19,13 +20,15 @@
 
 ## SIPP Materials
 
-- Downloading the data
+- **Downloading the data**
   - The data files and dictionaries used to read in the raw data were all downloaded from the NBER website: https://www.nber.org/research/data/survey-income-and-program-participation-sipp. 
-- Cleaning the data
+  
+- **Cleaning the data**
   - sipp96.do reads in the 1996-2008 panels and creates an appended dataset with data from 1996 to 2013 named sipp9608.dta and tempsipp2.dta.  
   - sipp8689.do reads in the 1986-89 panels and creates an appended dataset tempsipp80.dta.  
   - sipp9093.do reads in the 1990-93 panels and creates the appended dataset tempsipp.dta
-- Figures and tables
+  
+- **Figures and tables**
   - Figure 1: mean and median tenure by year
     - The file sipp8689ten.do takes tempsipp80.dta, calculates mean and median tenure by year, and saves the results in fig1sipp8689.dta.
     - The file fig1sipp.do starts with sipp9609.dta, calculates mean and median tenure by year, appends fig1sipp8689.dta, and saves the resulting data in fig1sipp.dta.
@@ -47,6 +50,7 @@
 
 
 ## NLSY Materials 
+
 - Raw data was downloaded from https://www.nlsinfo.org/investigator/pages/login
 - Basic cleaning was done with makedata_nlsy79.do.
 - The two do files that output the data used in Online Appendix Figure 4 and Online Appendix table 3 are make_tenure_whyleft.do (for 1979) and make_tenure_whyleft_97.do (for 1997).
@@ -63,9 +67,10 @@
 
 
 ## CPS_materials ##
-- Data
+
+- **Downloading the Data**
   - Data on tenure is from the CPS through IPUMS for 1996-2020, the ICPSR extract for 1987 and 1991, and the NBER extract for 1983.
-    - Note: during the early stage of our research, we discovered that tenure variables for earlier years in IPUMS were incorrectly coded.  We think that these issues have been resolved,  but have continued using NBER/ICPSR extracts for earlier years. For 1987 and 1991, we use the ICPSR extract, because the NBER extract appeared to be corrupted.
+    - *Note: during the early stage of our research, we discovered that tenure variables for earlier years in IPUMS were incorrectly coded.  We think that these issues have been resolved,  but have continued using NBER/ICPSR extracts for earlier years. For 1987 and 1991, we use the ICPSR extract, because the NBER extract appeared to be corrupted.*
   - Data on the separation rates is from the Annual Social and Economic Supplements through IPUMS.
   
   - 1996-2020 CPS tenure data from IPUMS. 
