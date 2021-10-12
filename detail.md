@@ -50,10 +50,10 @@
 - Raw data was downloaded from https://www.nlsinfo.org/investigator/pages/login
 - Basic cleaning was done with makedata_nlsy79.do.
 - The two do files that output the data used in Online Appendix Figure 4 and Online Appendix table 3 are make_tenure_whyleft.do (for 1979) and make_tenure_whyleft_97.do (for 1997).
-- - These two do files process the nearly NLSY data for their respective cohorts, using nlsy79_1979to1994.dta and nlsy97_1997to2011.dta. 
-- - Makedata_nlsy79.do also calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do. The first two of those three were provided by the NLS Investigator website above and can be used to replicated the raw extracts. The rename file was constructed by the authors to quickly process renaming the raw NLSY variables. Analogous data construction files are also posted for the 97 extracts. 
-- - Results for AF4 are in lines 3524 to 3540 of make_tenure_whyleft.log (for ’79) and of 2465 to 2478 for make_tenure_whyleft_97.log (for ’97).
-- - Results for AT3 are in lines 3495 to 3505 of make_tenure_whyleft.log (for ’79) and of 2415 to 2424 for make_tenure_whyleft_97.log (for ’97). 
+  - These two do files process the nearly NLSY data for their respective cohorts, using nlsy79_1979to1994.dta and nlsy97_1997to2011.dta. 
+  - Makedata_nlsy79.do also calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do. The first two of those three were provided by the NLS Investigator website above and can be used to replicated the raw extracts. The rename file was constructed by the authors to quickly process renaming the raw NLSY variables. Analogous data construction files are also posted for the 97 extracts. 
+  - Results for AF4 are in lines 3524 to 3540 of make_tenure_whyleft.log (for ’79) and of 2465 to 2478 for make_tenure_whyleft_97.log (for ’97).
+  - Results for AT3 are in lines 3495 to 3505 of make_tenure_whyleft.log (for ’79) and of 2415 to 2424 for make_tenure_whyleft_97.log (for ’97). 
 
 
 ## QEMP Materials
@@ -66,25 +66,25 @@
 - Data
 - - Data on tenure is from the CPS through IPUMS for 1996-2020, the ICPSR extract for 1987 and 1991, and the NBER extract for 1983.
 - - - Note: during the early stage of our research, we discovered that tenure variables for earlier years in IPUMS were incorrectly coded.  We think that these issues have been resolved,  but have continued using NBER/ICPSR extracts for earlier years. For 1987 and 1991, we use the ICPSR extract, because the NBER extract appeared to be corrupted.
-- - Data on the separation rates is from the Annual Social and Economic Supplements through IPUMS.
-- - 1996-2020 CPS tenure data from IPUMS. 
-- - - The necessary variables are: year, age, sex, educ, marst, empstat, classwkr, ind1990, occ1990, jtsuppwt, jtyears, and race.
-- - NBER 1983 
-- - - nber data codebook: http://data.nber.org/cps/cpsjan83.pdf
-- - - nber raw data: http://data.nber.org/cps/cpsjan83.zip
-- - code for extracting necessary variables: dataclean_1983.do
-- - ICPSR 1987 
-- - - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/8913/datadocumentation#
-- - - code for extracting necessary variables: dataclean_1987.do
-- - ICPSR 1991
-- - - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/9716
-- - - code for extracting necessary variables: dataclean_1991.do
-- - 1962-2020 separation rate data from the ASES through IPUMS
-- - - Samples: 1962-2020
-- - - Variables: asecwt, age, empstat, wkswork2, numemps, sex, year
+  - Data on the separation rates is from the Annual Social and Economic Supplements through IPUMS.
+  - 1996-2020 CPS tenure data from IPUMS. 
+    - The necessary variables are: year, age, sex, educ, marst, empstat, classwkr, ind1990, occ1990, jtsuppwt, jtyears, and race.
+  - NBER 1983 
+    - nber data codebook: http://data.nber.org/cps/cpsjan83.pdf
+    - nber raw data: http://data.nber.org/cps/cpsjan83.zip
+  - code for extracting necessary variables: dataclean_1983.do
+  - ICPSR 1987 
+    - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/8913/datadocumentation#
+  - code for extracting necessary variables: dataclean_1987.do
+  - ICPSR 1991
+    - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/9716
+    - code for extracting necessary variables: dataclean_1991.do
+  - 1962-2020 separation rate data from the ASES through IPUMS
+    - Samples: 1962-2020
+    - Variables: asecwt, age, empstat, wkswork2, numemps, sex, year
 
 
-- 
+
 The tables and figures are generated using the correspondingly named stata do files. 
 
 As noted in datanotes-cps.txt, we use the NBER extract for 1983, and ICPSR extracts for 1987 and 1991.  The files dataclean_1983, _1987, and _1991 process these data.  For 1996 and later, we use data provided by IPUMS.
