@@ -25,9 +25,9 @@
 - Downloading the data
   - The SIPP data files and dictionaries used to read in the raw data were all downloaded from the NBER website: https://www.nber.org/research/data/survey-income-and-program-participation-sipp. 
 - Cleaning the data
-  - sipp96.do reads in the 1996-2008 panels and creates an appended dataset with data from 1996 to 2013 named sipp9608.dta.  It also creates the file tempsipp2.dta as an intermediate step.  
-  - The file sipp8689.do reads in the 1986-89 panels and creates an appended dataset tempsipp80.dta.  
-  - The file sipp9093.do reads in the 1990-93 panels and creates the appended dataset tempsipp.dta
+  - sipp96.do reads in the 1996-2008 panels and creates an appended dataset with data from 1996 to 2013 named sipp9608.dta and tempsipp2.dta.  
+  - sipp8689.do reads in the 1986-89 panels and creates an appended dataset tempsipp80.dta.  
+  - sipp9093.do reads in the 1990-93 panels and creates the appended dataset tempsipp.dta
 - Figures and tables
   - Figure 1: mean and median tenure by year
     - The file sipp8689ten.do takes tempsipp80.dta, calculates mean and median tenure by year, and saves the results in fig1sipp8689.dta.
