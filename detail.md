@@ -64,18 +64,19 @@
 
 ## CPS_materials ##
 - Data
-- - Data on tenure is from the CPS through IPUMS for 1996-2020, the ICPSR extract for 1987 and 1991, and the NBER extract for 1983.
-- - - Note: during the early stage of our research, we discovered that tenure variables for earlier years in IPUMS were incorrectly coded.  We think that these issues have been resolved,  but have continued using NBER/ICPSR extracts for earlier years. For 1987 and 1991, we use the ICPSR extract, because the NBER extract appeared to be corrupted.
+  - Data on tenure is from the CPS through IPUMS for 1996-2020, the ICPSR extract for 1987 and 1991, and the NBER extract for 1983.
+    - Note: during the early stage of our research, we discovered that tenure variables for earlier years in IPUMS were incorrectly coded.  We think that these issues have been resolved,  but have continued using NBER/ICPSR extracts for earlier years. For 1987 and 1991, we use the ICPSR extract, because the NBER extract appeared to be corrupted.
   - Data on the separation rates is from the Annual Social and Economic Supplements through IPUMS.
+  
   - 1996-2020 CPS tenure data from IPUMS. 
     - The necessary variables are: year, age, sex, educ, marst, empstat, classwkr, ind1990, occ1990, jtsuppwt, jtyears, and race.
   - NBER 1983 
     - nber data codebook: http://data.nber.org/cps/cpsjan83.pdf
     - nber raw data: http://data.nber.org/cps/cpsjan83.zip
-  - code for extracting necessary variables: dataclean_1983.do
+    - code for extracting necessary variables: dataclean_1983.do
   - ICPSR 1987 
     - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/8913/datadocumentation#
-  - code for extracting necessary variables: dataclean_1987.do
+    - code for extracting necessary variables: dataclean_1987.do
   - ICPSR 1991
     - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/9716
     - code for extracting necessary variables: dataclean_1991.do
@@ -83,33 +84,24 @@
     - Samples: 1962-2020
     - Variables: asecwt, age, empstat, wkswork2, numemps, sex, year
 
-
-
-The tables and figures are generated using the correspondingly named stata do files. 
-
-As noted in datanotes-cps.txt, we use the NBER extract for 1983, and ICPSR extracts for 1987 and 1991.  The files dataclean_1983, _1987, and _1991 process these data.  For 1996 and later, we use data provided by IPUMS.
-
-The following figures and tables are self-contained within the corresponding do file and do not need auxillary data, except for the CPS microdata.
-
-- Figures 1, 2, Append 3; Table 1
-
-The following figures and tables require a crosswalk between the ind1990 and occ1990 variables provided by IPUMS, and the ind/occ variables in the CPS microdata. This file is provided in the replication package and is called: ind-occ-asec.dta 
-
-- Figures 3, 4, 7, 10, Append 1, Append 2; Tables 2 and 4
-
-The following figures and tables require estimates of cohort average long tenure and separation rates for various ages. Cohort average separation rates are produced in cohort-effects-separations.do and -byage.do, and cohort average tenure rates are produced in cohort-effects-longtenure.do.   
-
-- Figures 6, 8; Table 3
-
-The following tables and figures require summary data from the SIPP, possibly in addition to CPS data.  See elsewhere in replication package for information on processing SIPP data.
-
-- Figures 5, 9, 11, Append 5, Append 6
-
-The following figure requires summary data from the GSS.  See elsewhere in replication package for information on processing GSS data.
-
-- Figure 12
-
-The following figure requires summary data from the NLSY.  See elsewhere in replication package for information on processing NLSY data.
-
-- Append Figure 4
+- Figures and tables
+  - The tables and figures are generated using the correspondingly named stata do files. 
+  - The following figures and tables are self-contained within the corresponding do file and do not need auxillary data, except for the CPS microdata.
+    - Figures 1, 2, 
+    - Append Figure 3
+    - Table 1
+  - The following figures and tables require a crosswalk between the ind1990 and occ1990 variables provided by IPUMS, and the ind/occ variables in the CPS microdata. This file is provided in the replication package and is called: ind-occ-asec.dta 
+    - Figures 3, 4, 7, 10, 
+    - Append 1, 2
+    - Tables 2 and 4
+  - The following figures and tables require estimates of cohort average long tenure and separation rates for various ages. Cohort average separation rates are produced in cohort-effects-separations.do and -byage.do, and cohort average tenure rates are produced in cohort-effects-longtenure.do.   
+    - Figures 6, 8
+    - Table 3 
+  - The following tables and figures require summary data from the SIPP, possibly in addition to CPS data.  See elsewhere in replication package for information on processing SIPP data.
+    - Figures 5, 9, 11
+    - Append Figure 5, 6
+  - The following figure requires summary data from the GSS.  See elsewhere in replication package for information on processing GSS data.
+     - Figure 12
+   - The following figure requires summary data from the NLSY.  See elsewhere in replication package for information on processing NLSY data.
+     - Append Figure 4
 
