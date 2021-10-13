@@ -6,28 +6,28 @@ capture log close
 
 ***Fig 10
 
-local datapath="G:/mcr/scratch-m1cls01/JHR/processed"
-local outputpath="G:/research/tenure/JHR/final/output"
-local dtapath="G:/research/tenure/JHR/final/dta"
-local logpath="G:/research/tenure/JHR/final/log"
+local datapath="C:\Users\15099\Downloads\christopher_replicationcode\processed\"
+local outputpath="C:\Users\15099\Downloads\christopher_replicationcode\output\"
+local dtapath="C:\Users\15099\Downloads\christopher_replicationcode\"
+local logpath="C:\Users\15099\Downloads\christopher_replicationcode\"
 
-log using `logpath'/fig10.log, replace
+log using `logpath'fig10.log, replace
 
-use "`dtapath'/ind-occ-asec.dta", clear
+use "`dtapath'ind-occ-asec.dta", clear
 sort year occ 
 collapse (mean) occ1990, by(year occ)
 sort year occ
 tempfile occ
 save `occ', replace
 
-use "`dtapath'/ind-occ-asec.dta", clear
+use "`dtapath'ind-occ-asec.dta", clear
 sort year ind
 collapse (mean) ind1990, by(year ind)
 sort year ind
 tempfile ind
 save `ind', replace
 
-use "`datapath'/jan1983.dta", clear
+use "`datapath'jan1983.dta", clear
 keep if age>=22 & age<=64
 keep if esr==1 | esr==2
 keep if class>=1 & class<=2
@@ -61,7 +61,7 @@ keep weightsupp age sex white black other married hsd hsg sc cg monthwork yrswor
 tempfile t1983
 save `t1983', replace
 
-use "`datapath'/jan1987.dta", clear
+use "`datapath'jan1987.dta", clear
 keep if age>=22 & age<=64
 keep if esr==1 | esr==2
 keep if class>=1 & class<=2
@@ -95,7 +95,7 @@ keep weightsupp age sex white black other married hsd hsg sc cg monthwork yrswor
 tempfile t1987
 save `t1987', replace
 
-use "`datapath'/jan1991.dta", clear
+use "`datapath'jan1991.dta", clear
 keep if age>=22 & age<=64
 keep if esr==1 | esr==2
 keep if class>=1 & class<=4
@@ -129,7 +129,7 @@ keep weight age sex white black other married hsd hsg sc cg monthwork yrswork ye
 tempfile t1991
 save `t1991', replace
 
-use "G:/mcr/scratch-m1cls01/data/cps/IPUMS/ten-dw/cps_00138.dta" if year>=1996, clear
+use "`dtapath'cps_00138.dta" if year>=1996, clear
 keep if year>=1996
 keep if age>=22 & age<=64
 drop if jtyears>=90 
@@ -356,9 +356,9 @@ rename A5 indocc
 
 sort year
 
-save `outputpath'\fig10.dta, replace
+save `outputpath'fig10.dta, replace
 
-use `outputpath'\fig10.dta, clear
+use `outputpath'fig10.dta, clear
 sort year
 
 sort year
@@ -424,7 +424,7 @@ twoway
 	saving("`outputpath'/fig10.gph", replace)
 	;
 
-graph export "`outputpath'/fig10.eps", as(eps) replace;
+graph export "`outputpath'fig10.eps", as(eps) replace;
 
 # delimit cr
 log close

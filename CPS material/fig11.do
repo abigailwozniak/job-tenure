@@ -6,14 +6,13 @@ capture log close
 
 ***Fig 11
 
-local datapath="G:/mcr/scratch-m1cls01/JHR/processed"
-local outputpath="G:/research/tenure/JHR/final/output"
-local dtapath="G:/research/tenure/JHR/final/dta"
-local logpath="G:/research/tenure/JHR/final/log"
+local datapath="C:\Users\15099\Downloads\christopher_replicationcode\processed\"
+local outputpath="C:\Users\15099\Downloads\christopher_replicationcode\output\"
+local dtapath="C:\Users\15099\Downloads\christopher_replicationcode\"
+local logpath="C:\Users\15099\Downloads\christopher_replicationcode\"
 
-
-use "`dtapath'/fig11sipp.dta", clear
-gen time=year+((month-1)/12)
+use "`dtapath'fig11sipp.dta", clear
+* gen time=year+((month-1)/12)
 
 gen c2=10 if (year==2001 & month>=3 & month<=11) 
 gen c3=10 if (year==2007 & month==12) | (year==2008) | (year==2009 & month<=6) 
@@ -51,6 +50,6 @@ twoway
 	saving("`outputpath'/fig11.gph", replace)
 	;
 
-graph export "`outputpath'/fig11.eps", 	as(eps) replace;
+graph export "`outputpath'fig11.eps", 	as(eps) replace;
 
 # delimit cr

@@ -6,12 +6,15 @@ capture log close
 
 ***Fig 12
 
-local datapath="G:/mcr/scratch-m1cls01/JHR/processed"
-local outputpath="G:/research/tenure/JHR/final/output"
-local dtapath="G:/research/tenure/JHR/final/dta"
-local logpath="G:/research/tenure/JHR/final/log"
+local datapath="C:\Users\15099\Downloads\christopher_replicationcode\processed\"
+local outputpath="C:\Users\15099\Downloads\christopher_replicationcode\output\"
+local dtapath="C:\Users\15099\Downloads\christopher_replicationcode\"
+local logpath="C:\Users\15099\Downloads\christopher_replicationcode\"
 
-use "`dtapath'/fig12gss.dta", clear
+use "`dtapath'fig12gss.dta", clear
+
+collapse djoblose, by(year ageg4)
+
 replace djoblose=djoblose*100
 keep if year>=1975
 
@@ -62,10 +65,10 @@ twoway
 	graphregion(fcolor(white) lcolor(white) ifcolor(white) ilcolor(white) margin(small)) 
 	plotregion(fcolor(white) lcolor(black) ifcolor(white) ilcolor(white) margin(tiny))
 	name("fig12", replace)
-	saving("`outputpath'/fig12.gph", replace)
+	saving("`outputpath'fig12.gph", replace)
 	;
 
-graph export "`outputpath'/fig12.eps", as(eps) replace;
+graph export "`outputpath'fig12.eps", as(eps) replace;
 
 # delimit cr
 
