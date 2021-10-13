@@ -4,14 +4,14 @@ capture log close
   
 *FOR CALCULATING SEPARATION RATE COHORT EFFECTS
 
-local logpath="G:/research/tenure/JHR/final/log"
-local datapath="G:/mcr/scratch-m1cls01/JHR/processed"
-local outputpath="G:/research/tenure/JHR/final/output"
-local dtapath="G:/research/tenure/JHR/final/dta"
+local logpath="C:\Users\15099\Downloads\christopher_replicationcode\"
+local datapath="C:\Users\15099\Downloads\christopher_replicationcode\processed\"
+local outputpath="C:\Users\15099\Downloads\christopher_replicationcode\output\"
+local dtapath="C:\Users\15099\Downloads\christopher_replicationcode\"
 
-log using "`logpath'/cohort-effects-separation-byage.log", replace
+log using "`logpath'cohort-effects-separation-byage.log", replace
 
-use asecwt age empstat wkswork2 numemps sex year using G:/mcr/scratch-m1cls01/data/cps/IPUMS/ASEC/cps_00141.dta, clear
+use asecwt age empstat wkswork2 numemps sex year using `dtapath'cps_00138.dta, clear
 keep if asecwt>0
 keep if age>=25 & age<=54
 gen emp=(empstat==10 | empstat==12)
@@ -122,7 +122,7 @@ merge cohort using `temp3554'
 drop _merge
 sort cohort
 
-save "`outputpath'/cohort-effects-separations-men-byage.dta", replace
+save "`outputpath'cohort-effects-separations-men-byage.dta", replace
 
 
 log close

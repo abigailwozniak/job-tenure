@@ -4,14 +4,14 @@ drop _all
 
 *FOR CALCULATING LONG TENURE COHORT EFFECTS
 
-local logpath="G:/research/tenure/JHR/final/log"
-local datapath="G:/mcr/scratch-m1cls01/JHR/processed"
-local outputpath="G:/research/tenure/JHR/final/output"
-local dtapath="G:/research/tenure/JHR/final/dta"
+local logpath="C:\Users\15099\Downloads\christopher_replicationcode\"
+local datapath="C:\Users\15099\Downloads\christopher_replicationcode\processed\"
+local outputpath="C:\Users\15099\Downloads\christopher_replicationcode\output\"
+local dtapath="C:\Users\15099\Downloads\christopher_replicationcode\"
 
-log using "`logpath'/cohort-effects-longtenure.log", replace
+log using "`logpath'cohort-effects-longtenure.log", replace
 
-use "`datapath'/jan1983.dta", clear
+use "`datapath'jan1983.dta", clear
 keep if age>=55 & age<=64
 keep if esr==1 | esr==2
 keep if class>=1 & class<=2
@@ -62,7 +62,7 @@ keep weight age sex married monthwork yrswork year hsd hsg sc cg
 tempfile t1991
 save `t1991', replace
 
-use "G:/mcr/scratch-m1cls01/data/cps/IPUMS/ten-dw/cps_00138.dta" if year>=1996, clear
+use "`dtapath'cps_00138.dta" if year>=1996, clear
 keep if year>=1996
 keep if age>=55 & age<=64
 drop if jtyears>=90 
@@ -143,7 +143,7 @@ collapse (mean) ten20p_5564_`sex' [aw=pop], by(cohort)
 
 sort cohort
 keep cohort ten20p_5564_`sex'
-save "`outputpath'/cohort-effects-longtenure-sex`sex'.dta", replace
+save "`outputpath'cohort-effects-longtenure-sex`sex'.dta", replace
 }
 
 capture log close

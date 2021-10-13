@@ -4,14 +4,14 @@ capture log close
 
 *FOR CALCULATING SEPARATION RATE COHORT EFFECTS
 
-local logpath="G:/research/tenure/JHR/final/log"
-local datapath="G:/mcr/scratch-m1cls01/JHR/processed"
-local outputpath="G:/research/tenure/JHR/final/output"
-local dtapath="G:/research/tenure/JHR/final/dta"
+local logpath="C:\Users\15099\Downloads\christopher_replicationcode\"
+local datapath="C:\Users\15099\Downloads\christopher_replicationcode\processed\"
+local outputpath="C:\Users\15099\Downloads\christopher_replicationcode\output\"
+local dtapath="C:\Users\15099\Downloads\christopher_replicationcode\"
 
-log using "`logpath'/cohort-effects-separation.log", replace
+log using "`logpath'cohort-effects-separation.log", replace
 
-use G:/mcr/scratch-m1cls01/data/cps/IPUMS/ASEC/cps_00141.dta, clear
+use `dtapath'cps_00138.dta, clear
 keep if asecwt>0
 keep if age>=35 & age<=54
 gen emp=(empstat==10 | empstat==12)
@@ -79,7 +79,7 @@ sort cohort
 
 collapse (mean) predseprate_multE* predseprate_EN* predur* [aw=asecwt], by(cohort)
 sort cohort
-save "`outputpath'/cohort-effects-separations-sex`sex'.dta", replace
+save "`outputpath'cohort-effects-separations-sex`sex'.dta", replace
 }
 
 log close

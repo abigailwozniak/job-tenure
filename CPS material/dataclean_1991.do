@@ -1,7 +1,7 @@
 set more off
 
 clear
-local datapath="G:/mcr/scratch-m1cls01/JHR/"
+local datapath="C:\Users\15099\Downloads\christopher_replicationcode\"
 quietly infix                    ///
   byte    state          79-80   ///
   byte    mlr            131      ///
@@ -24,7 +24,7 @@ quietly infix                    ///
   byte    yrswork	     374-376 ///
   byte 	  unionstat		 188	///
   byte	  unioncover     189   ///
-using "`datapath'raw/1991/09716-0001-Data.txt"
+using "`datapath'09716-0001-Data.txt"
 
 gen year=1991
 
