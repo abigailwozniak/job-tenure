@@ -35,7 +35,7 @@
     - **sipp96nosep8.do** - uses sipp9608.dta, calculates the retention rate for men with 20+ years of tenure and saves the average retention rate over time in sipp96nosep8.dta.
     - **sippeu_old.do** - uses tempsipp80.dta and tempsipp2.dta to calculate the fraction of employed men who transition from employed to unemployed and from employed to not-in-labor force and saves the results in sippeu_old.dta. 
     - The line labeled “Fraction remaining employed, age 50-64” shows 1 –minus the sum of these two transition rates.
-    - See the CPS_Materials section for the do file that uses fig1sipp.dta to produce Figure 2.
+    - See the CPS_Materials section for the do file that uses sipp96nosep8.dta and sippeu_old.dta to produce Figure 5.
 - **Figure 9: Percent of workers with less than 1 year of tenure and 1-3 years of tenure**
     - See Figure 1.
 - **Figure 11: Decomposition of new hires**
@@ -102,11 +102,12 @@
     - Figures 1, 2, 
     - Online Appendix Figure 3
     - Table 1
-  - The following figures and tables require a crosswalk between the ind1990 and occ1990 variables provided by IPUMS, and the ind/occ variables in the CPS microdata. This file is provided in the replication package and is called: ind-occ-asec.dta 
+  - The following figures and tables require a crosswalk between the ind1990 and occ1990 variables provided by IPUMS, and the ind/occ variables in the CPS microdata. This file is provided in the replication package and is called: **ind-occ-asec.dta** 
     - Figures 3, 4, 7, 10, 
     - Online Appendix Figure 1, 2
     - Tables 2 and 4
-  - The following figures and tables require estimates of cohort average long tenure and separation rates for various ages. Cohort average separation rates are produced in cohort-effects-separations.do and -byage.do, and cohort average tenure rates are produced in cohort-effects-longtenure.do.   
+    - Online Appendix Table 2
+  - The following figures and tables require estimates of cohort average long tenure and separation rates for various ages. Cohort average separation rates are produced in **cohort-effects-separations.do** and **-byage.do**, and cohort average tenure rates are produced in **cohort-effects-longtenure.do**.   
     - Figures 6, 8
     - Table 3 
   - The following tables and figures require summary data from the SIPP, possibly in addition to CPS data.  See elsewhere in replication package for information on processing SIPP data.
