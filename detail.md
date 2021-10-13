@@ -57,9 +57,8 @@
 
 - Raw data was downloaded from https://www.nlsinfo.org/investigator/pages/login
 - **makedata_nlsy79.do** - uses the raw data from 1979-1994, cleans it, and outputs nlsy79_1979to1994.dta. This do file also calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do.
-- **makedata_nlsy97.do** - uses teh raw data from 1997-2011, cleans it, and outputs nlsy97_1997to2011.dta. This do file also calls nlsy97_sp2019.dct, nlsy97_sp2019-value-labels.do, and rename_nlsy97_sp2019.do.
-- **nlsy79_sp2019.dct** and **nlsy97_sp2019.dct**- provided by the NLS INvestigator website (link above) and can be used to repliacte the raw extracts.
-- **nlsy79_sp2019-value-labels.do** and **nlsy97_sp2019-value-labels.do** - 
+- **makedata_nlsy97.do** - uses the raw data from 1997-2011, cleans it, and outputs nlsy97_1997to2011.dta. This do file also calls nlsy97_sp2019.dct, nlsy97_sp2019-value-labels.do, and rename_nlsy97_sp2019.do.
+- **nlsy79_sp2019.dct**, **nlsy97_sp2019.dct**, **nlsy79_sp2019-value-labels.do** and **nlsy97_sp2019-value-labels.do** - provided by the NLS INvestigator website (link above) and can be used to repliacte the raw extracts.
 - **rename_nlsy79_sp2019.do** and **rename_nlsy97_sp2019.do** - quickly processes renaming the raw NLSY variables.
 - The two do files that output the data used in Online Appendix Figure 4 and Online Appendix table 3 are make_tenure_whyleft.do (for 1979) and make_tenure_whyleft_97.do (for 1997).
 - **make_tenure_whyleft.do** - uses nlsy79_1979to1994.dta to output results used in AF4 and AT3. 
@@ -71,7 +70,7 @@
 ## QEMP Materials
 
 - The data from the 1960s and 1970s can be found on the ICPSR website (icpsr.org), study numbers 3507, 3510, and 7689.
-- The file qemp.do reads in the raw data from all 3 surveys, appends them, and calculates the averages reported in columns labeled “QEMP 1970s” in Table 6.
+- **qemp.do** - reads in the raw data from all 3 surveys, appends them, and calculates the averages reported in columns labeled “QEMP 1970s” in Table 6.
 
 
 ## CPS_materials ##
