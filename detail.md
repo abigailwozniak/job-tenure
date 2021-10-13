@@ -25,7 +25,7 @@
 - **Cleaning the data**
   - **sipp96.do** - uses the raw 1996-2008 panel data to construct an appended dataset with data from 1996 to 2013 named **sipp9608.dta** and **tempsipp2.dta**.  
   - **sipp8689.do** - uses the raw 1986-89 panels to construct an appended dataset **tempsipp80.dta**.  
-  - **sipp9093.do** reads in the 1990-93 panels and creates the appended dataset **tempsipp.dta**.
+  - **sipp9093.do** - reads in the 1990-93 panels and creates the appended dataset **tempsipp.dta**.
   
 - **Figure 1: mean and median tenure by year**
     - **sipp8689ten.do** - uses tempsipp80.dta, calculates mean and median tenure by year, and saves the results in fig1sipp8689.dta.
@@ -58,12 +58,14 @@
 - Raw data was downloaded from https://www.nlsinfo.org/investigator/pages/login
 - **makedata_nlsy79.do** - uses the raw data from 1979-1994, cleans it, and outputs nlsy79_1979to1994.dta. This do file also calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do.
 - **makedata_nlsy97.do** - uses teh raw data from 1997-2011, cleans it, and outputs nlsy97_1997to2011.dta. This do file also calls nlsy97_sp2019.dct, nlsy97_sp2019-value-labels.do, and rename_nlsy97_sp2019.do.
-- **nlsy79_sp2019.dct** and **nlsy97_sp2019.dct**- provided by the NLS INvestigator website (link above) and can be used to repliacte teh raw extracts.
+- **nlsy79_sp2019.dct** and **nlsy97_sp2019.dct**- provided by the NLS INvestigator website (link above) and can be used to repliacte the raw extracts.
 - **nlsy79_sp2019-value-labels.do** and **nlsy97_sp2019-value-labels.do** - 
+- **rename_nlsy79_sp2019.do** and **rename_nlsy97_sp2019.do** - quickly processes renaming the raw NLSY variables.
 - The two do files that output the data used in Online Appendix Figure 4 and Online Appendix table 3 are make_tenure_whyleft.do (for 1979) and make_tenure_whyleft_97.do (for 1997).
-  - Makedata_nlsy79.do also calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do. The first two of those three were provided by the NLS Investigator website above and can be used to replicated the raw extracts. The rename file was constructed by the authors to quickly process renaming the raw NLSY variables. Analogous data construction files are also posted for the 97 extracts. 
-  - Results for AF4 are in lines 3524 to 3540 of make_tenure_whyleft.log (for ’79) and of 2465 to 2478 for make_tenure_whyleft_97.log (for ’97).
-  - Results for AT3 are in lines 3495 to 3505 of make_tenure_whyleft.log (for ’79) and of 2415 to 2424 for make_tenure_whyleft_97.log (for ’97). 
+- **make_tenure_whyleft.do** - uses nlsy79_1979to1994.dta to output results used in AF4 and AT3. 
+- **make_tenure_whyleft_97.do** - uses nlsy97_1997to2011.dta to output results used in AF4 and AT3. 
+- Results for AF4 are in lines 3524 to 3540 of make_tenure_whyleft.log (for ’79) and of 2465 to 2478 for make_tenure_whyleft_97.log (for ’97).
+- Results for AT3 are in lines 3495 to 3505 of make_tenure_whyleft.log (for ’79) and of 2415 to 2424 for make_tenure_whyleft_97.log (for ’97). 
 
 
 ## QEMP Materials
