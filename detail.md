@@ -9,7 +9,7 @@
   - Contains the do-files to reproduce the GSS columns in Table 6
 - **NLSY_Materials**
   - Contains the do-files to produce the data used for Online Appendix Figure 4 and Online Appendix Table 3
-- **QEMP Materials**
+- **QEMP_Materials**
   - Contains the do-files that reproduce the QEMP columns of Table 6
 - **CPS_Materials**
   - Contains the do-files that reproduce Figures 1-12, Tables 1-4, Online Appendix Table 2; and Online Appendix Figures 1-6.
@@ -17,7 +17,7 @@
 
  
 
-## SIPP Materials
+## SIPP_Materials
 
 - **Downloading the data**
   - The data files and dictionaries used to read in the raw data were all downloaded from the NBER website: https://www.nber.org/research/data/survey-income-and-program-participation-sipp. 
@@ -45,7 +45,7 @@
     - **sipp96ee.do** - uses tempsipp2.dta and calculates job-to-job flows by tenure category.  It then calculates counterfactual transition rates holding either the share of each tenure category at its pre-2000 level or the fraction of job-to-job flows for each tenure category at its pre-2000 level.  The actual and counterfactual job-to-job transition rates are then reported to make the table.
 
 
-## GSS Materials
+## GSS_Materials
 
 - Raw GSS data were downloaded from https://gssdataexplorer.norc.org/. 
 - **read_gss_jobtenure.do** - uses raw GSS data to output **read_gss_jobtenure.log** and **gss_jobtenure.dta**.
@@ -53,7 +53,7 @@
 - See the CPS_materials for the do file that uses **gss_jobtenure.dta** to construct **Figure 12**.
 
 
-## NLSY Materials 
+## NLSY_Materials 
 
 - Raw data was downloaded from https://www.nlsinfo.org/investigator/pages/login
 - **makedata_nlsy79.do** - uses the raw data from 1979-1994, cleans it, and outputs nlsy79_1979to1994.dta. This do file also calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do.
@@ -67,7 +67,7 @@
 - Results for AT3 are in lines 3495 to 3505 of make_tenure_whyleft.log (for ’79) and of 2415 to 2424 for make_tenure_whyleft_97.log (for ’97). 
 
 
-## QEMP Materials
+## QEMP_Materials
 
 - The data from the 1960s and 1970s can be found on the ICPSR website (icpsr.org), study numbers 3507, 3510, and 7689.
 - **qemp.do** - reads in the raw data from all 3 surveys, appends them, and calculates the averages reported in columns labeled “QEMP 1970s” in Table 6.
