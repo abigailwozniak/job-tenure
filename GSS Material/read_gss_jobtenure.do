@@ -1,5 +1,8 @@
 set more off
-
+clear
+drop _all
+graph drop _all
+capture log close
 
 log using read_gss_jobtenure.log, replace
 
@@ -81,11 +84,11 @@ preserve
 collapse (mean) djoblose djobfind dmobile [pw=wtssall], by(year ageg4)
 
 * Could do two-axis plot with unemp rate
-sort year ageg
-merge m:1 year using annual_UNRATE.dta
+*sort year ageg
+*merge m:1 year using annual_UNRATE.dta
 *tab1 year if _merge < 3
-drop if _merge < 3
-drop _merge
+* drop if _merge < 3
+*drop _merge
 
 gr twoway line djoblose year if ageg4==1, lwidth(medthick) yaxis(1) || line djoblose year if ageg4==2, lwidth(medthick) yaxis(1) || line djoblose year if ageg4==3, lwidth(medthick) yaxis(1) || line djoblose year if ageg4==4, lwidth(medthick) yaxis(1) ///
   legend(label(1 "Less than 25") label(2 "25 to 34") label(3 "35 to 54") label(4 "55 plus")) ///
@@ -95,15 +98,15 @@ gr twoway line djoblose year if ageg4==1, lwidth(medthick) yaxis(1) || line djob
   legend(label(1 "Less than 25") label(2 "25 to 34") label(3 "35 to 44") label(4 "45 to 54") label(5 "55 plus")) ///
   saving(djoblose_age, replace)
 
-keep djoblose year ageg4 UNRATE
-save djoblose_age_graph.dta, replace
+*keep djoblose year ageg4 UNRATE
+*save djoblose_age_graph.dta, replace
 
-tsset ageg4 year
-reg djoblose UNRATE
-reg djoblose L1.UNRATE UNRATE F.UNRATE
+*tsset ageg4 year
+*reg djoblose UNRATE
+*reg djoblose L1.UNRATE UNRATE F.UNRATE
 *sort ageg4 year
 *by ageg4: reg djoblose UNRATE
-corr djoblose UNRATE
+*corr djoblose UNRATE
 
 restore
 preserve
@@ -244,7 +247,7 @@ table yearsjobrec [pw=wtssall], contents(mean djobfind mean dtrynewjb)
 tabulate yearsjobrec satjob1, row
 */
 
-restore
+* restore
 
 * Tabulate job sec by tenure and year - look for 2000's trend - using jobsecok from gss, NOTE there is a separate jobsec GSS variable
 * This gives share saying statement job security is good is very true
