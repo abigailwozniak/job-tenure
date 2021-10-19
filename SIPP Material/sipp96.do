@@ -28,6 +28,9 @@ quietly foreach N of num 1/9 {
 quietly for var grgc: tostring X, replace
 quietly for var eentaid epppnum lgtkey: destring X , replace
 
+* For 2004, I downloaded SAS data files and converted them into Stata using StatTransfer.  
+* That gave me .dta files, so then I just needed to append them to the main file.  
+
 quietly for num 1/12: append using ~/data_house/sipp/l04puwX
 save ~/scratch3/tempsipp2, replace
 
