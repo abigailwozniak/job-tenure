@@ -10,7 +10,7 @@ local dtapath="G:/research/tenure/JHR/final/dta"
 
 use "`dtapath'/figappend5.dta", clear
 
-gen time=year+((month-1)/12)
+* gen time=year+((month-1)/12)
 
 gen c1=.15 if (year==1990 & month>=7) | (year==1991 & month<=3)
 gen c2=.15 if (year==2001 & month>=3 & month<=11) 
