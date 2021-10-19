@@ -102,7 +102,7 @@
   - The tables and figures are generated using the correspondingly named stata do files. 
   - The following figures and tables are self-contained within the corresponding do file and do not need auxillary data, except for the CPS microdata.
     - Figures 1, 2, 
-    - Online Appendix Figure 3 and 5
+    - Online Appendix Figure 3 
     - Table 1
   - The following figures and tables require a crosswalk between the ind1990 and occ1990 variables provided by IPUMS, and the ind/occ variables in the CPS microdata. This file is provided in the replication package and is called: **ind-occ-asec.dta** 
     - Figures 3, 4, 7, 10, 
