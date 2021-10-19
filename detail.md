@@ -43,7 +43,9 @@
     - See the CPS_materials for the do files that use sipp96hires.dta to output Figure 11.
 - **Table 5: Decomposition of the change in the aggregate job-to-job transition rate**
     - **sipp96ee.do** - uses tempsipp2.dta and calculates job-to-job flows by tenure category.  It then calculates counterfactual transition rates holding either the share of each tenure category at its pre-2000 level or the fraction of job-to-job flows for each tenure category at its pre-2000 level.  The actual and counterfactual job-to-job transition rates are then reported to make the table.
-
+- **Appendix Figure 5: Involuntary and Voluntary Separations in the SIPP**
+  - **afig5.do** - uses sipp9608.dta and outputs figappend5.dta
+  - See the CPS_materials for the do files that use figappend5.dta to output Appendix Figure 5
 
 ## GSS_Materials
 
@@ -100,7 +102,7 @@
   - The tables and figures are generated using the correspondingly named stata do files. 
   - The following figures and tables are self-contained within the corresponding do file and do not need auxillary data, except for the CPS microdata.
     - Figures 1, 2, 
-    - Online Appendix Figure 3
+    - Online Appendix Figure 3 and 5
     - Table 1
   - The following figures and tables require a crosswalk between the ind1990 and occ1990 variables provided by IPUMS, and the ind/occ variables in the CPS microdata. This file is provided in the replication package and is called: **ind-occ-asec.dta** 
     - Figures 3, 4, 7, 10, 
