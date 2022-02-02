@@ -51,10 +51,13 @@
 
 - **Downloading the data**
   - Raw GSS data were downloaded from https://gssdataexplorer.norc.org/. 
+  
 - **Cleaning the data**
   - **read_gss_jobtenure.do** - uses raw GSS data to output **read_gss_jobtenure.log** and **gss_jobtenure.dta**.
+  
 - **Table 6, GSS columns**
   - Results for the GSS columns of **Table 6** are in 567-605 of **read_gss_jobtenure.log**.
+  
 - **Figure 12**
   - See the CPS_materials for the do file that uses **gss_jobtenure.dta** to construct **Figure 12**.
 
@@ -62,11 +65,13 @@
 ## NLSY_Materials 
 - **Downloading the data**
   - Raw data files nlsy79_sp2019.dct and nlsy97_sp2019.dct were downloaded from https://www.nlsinfo.org/investigator/pages/login. (These files are large, and thus not included in this repository.)
+  
 - **Cleaning the data**
   - **makedata_nlsy79.do** - uses the raw data from 1979-1994, cleans it, and outputs nlsy79_1979to1994.dta. This do file calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do.
   - **makedata_nlsy97.do** - uses the raw data from 1997-2011, cleans it, and outputs nlsy97_1997to2011.dta. This do file also calls nlsy97_sp2019.dct, nlsy97_sp2019-value-labels.do, and rename_nlsy97_sp2019.do.
   - **nlsy79_sp2019.dct**, **nlsy97_sp2019.dct**, **nlsy79_sp2019-value-labels.do** and **nlsy97_sp2019-value-labels.do** - provided by the NLS INvestigator website (link above) and can be used to repliacte the raw extracts.
   - **rename_nlsy79_sp2019.do** and **rename_nlsy97_sp2019.do** - quickly processes renaming the raw NLSY variables.
+  
 - **Online Appendix Figure 4 and Online Appendix table 3**
   - **make_tenure_whyleft.do** - uses nlsy79_1979to1994.dta to output results used in AF4 and AT3. 
   - **make_tenure_whyleft_97.do** - uses nlsy97_1997to2011.dta to output results used in AF4 and AT3. 
@@ -78,6 +83,7 @@
 
 - **Downloading the Data**
   - The data from the 1960s and 1970s can be found on the ICPSR website (icpsr.org), study numbers 3507, 3510, and 7689.
+  
 - **Cleaning the Data and Table 6**
   - **qemp.do** - reads in the raw data from all 3 surveys, appends them, and calculates the averages reported in columns labeled “QEMP 1970s” in Table 6.
 
@@ -86,6 +92,7 @@
 
 - **Downloading the Data**
   - Data on tenure is from the CPS through IPUMS for 1996-2020, the ICPSR extract for 1987 and 1991, and the NBER extract for 1983. For more information, see the datanotes-cps.txt file.
+  
 - **Figures and Tables**
   - The tables and figures are generated using the correspondingly named stata do files. 
   - The following figures and tables are self-contained within the corresponding do file and do not need auxillary data, except for the CPS microdata.
