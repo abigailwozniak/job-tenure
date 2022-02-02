@@ -183,7 +183,7 @@ tab1 yearsjobrec
 
 tabulate djobfind wrkstat
 
-* Table 5 means
+* Table 6 means
 
 mean djobsec djobfind dsatjob dtrynewjb [pw=wtssall]
 *table yearsjobrec [pw=wtssall], contents(mean djobsec mean djobfind mean dsatjob mean dtrynewjb n djobsec) 
