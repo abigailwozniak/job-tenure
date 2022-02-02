@@ -78,26 +78,7 @@
 ## CPS_materials ##
 
 - **Downloading the Data**
-  - Data on tenure is from the CPS through IPUMS for 1996-2020, the ICPSR extract for 1987 and 1991, and the NBER extract for 1983.
-    - *Note: during the early stage of our research, we discovered that tenure variables for earlier years in IPUMS were incorrectly coded.  We think that these issues have been resolved,  but have continued using NBER/ICPSR extracts for earlier years. For 1987 and 1991, we use the ICPSR extract, because the NBER extract appeared to be corrupted.*
-  - Data on the separation rates is from the Annual Social and Economic Supplements through IPUMS.
-  
-  - 1996-2020 CPS tenure data from IPUMS. 
-    - Variables: year, age, sex, educ, marst, empstat, classwkr, ind1990, occ1990, jtsuppwt, jtyears, and race.
-  - NBER 1983 
-    - NBER data codebook: http://data.nber.org/cps/cpsjan83.pdf
-    - NBER raw data: http://data.nber.org/cps/cpsjan83.zip
-    - Code for extracting necessary variables: dataclean_1983.do
-  - ICPSR 1987 
-    - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/8913/datadocumentation#
-    - Code for extracting necessary variables: dataclean_1987.do
-  - ICPSR 1991
-    - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/9716
-    - Code for extracting necessary variables: dataclean_1991.do
-  - 1962-2020 separation rate data from the ASES through IPUMS
-    - Samples: 1962-2020
-    - Variables: asecwt, age, empstat, wkswork2, numemps, sex, year
-
+  - Data on tenure is from the CPS through IPUMS for 1996-2020, the ICPSR extract for 1987 and 1991, and the NBER extract for 1983. For more information, see the datanotes-cps.txt file.
 - **Figures and Tables**
   - The tables and figures are generated using the correspondingly named stata do files. 
   - The following figures and tables are self-contained within the corresponding do file and do not need auxillary data, except for the CPS microdata.
