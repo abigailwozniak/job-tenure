@@ -57,8 +57,8 @@
 
 ## NLSY_Materials 
 
-- Raw data was downloaded from https://www.nlsinfo.org/investigator/pages/login
-- **makedata_nlsy79.do** - uses the raw data from 1979-1994, cleans it, and outputs nlsy79_1979to1994.dta. This do file also calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do.
+- Raw data files nlsy79_sp2019.dct and nlsy97_sp2019.dct were downloaded from https://www.nlsinfo.org/investigator/pages/login. (These files are large, and thus not included in this repository.)
+- **makedata_nlsy79.do** - uses the raw data from 1979-1994, cleans it, and outputs nlsy79_1979to1994.dta. This do file calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do.
 - **makedata_nlsy97.do** - uses the raw data from 1997-2011, cleans it, and outputs nlsy97_1997to2011.dta. This do file also calls nlsy97_sp2019.dct, nlsy97_sp2019-value-labels.do, and rename_nlsy97_sp2019.do.
 - **nlsy79_sp2019.dct**, **nlsy97_sp2019.dct**, **nlsy79_sp2019-value-labels.do** and **nlsy97_sp2019-value-labels.do** - provided by the NLS INvestigator website (link above) and can be used to repliacte the raw extracts.
 - **rename_nlsy79_sp2019.do** and **rename_nlsy97_sp2019.do** - quickly processes renaming the raw NLSY variables.
@@ -104,7 +104,7 @@
     - Figures 1, 2, 
     - Online Appendix Figure 3 
     - Table 1
-  - The following figures and tables require a crosswalk between the ind1990 and occ1990 variables provided by IPUMS, and the ind/occ variables in the CPS microdata. This file is provided in the replication package and is called: **ind-occ-asec.dta** 
+  - The following figures and tables require a crosswalk between the ind1990 and occ1990 variables provided by IPUMS, and the ind/occ variables in the CPS microdata. This file is provided in the repository and is called: **ind-occ-asec.dta** 
     - Figures 3, 4, 7, 10, 
     - Online Appendix Figure 1, 2
     - Tables 2 and 4
@@ -112,11 +112,11 @@
   - The following figures and tables require estimates of cohort average long tenure and separation rates for various ages. Cohort average separation rates are produced in **cohort-effects-separations.do** and **-byage.do**, and cohort average tenure rates are produced in **cohort-effects-longtenure.do**.   
     - Figures 6, 8
     - Table 3 
-  - The following tables and figures require summary data from the SIPP, possibly in addition to CPS data.  See elsewhere in replication package for information on processing SIPP data.
+  - The following tables and figures require summary data from the SIPP, possibly in addition to CPS data.  See elsewhere in the repository for information on processing SIPP data.
     - Figures 5, 9, 11
     - Online Appendix Figure 5, 6
-  - The following figure requires summary data from the GSS.  See elsewhere in replication package for information on processing GSS data.
+  - The following figure requires summary data from the GSS.  See elsewhere in the repository for information on processing GSS data.
      - Figure 12
-   - The following figure requires summary data from the NLSY.  See elsewhere in replication package for information on processing NLSY data.
+   - The following figure requires summary data from the NLSY.  See elsewhere in the repository for information on processing NLSY data.
      - Online Appendix Figure 4
 
