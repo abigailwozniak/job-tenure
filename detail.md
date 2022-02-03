@@ -157,7 +157,29 @@
 ## CPS_materials ##
 
 - **Downloading the Data**
-  - Data on tenure is from the CPS through IPUMS for 1996-2020, the ICPSR extract for 1987 and 1991, and the NBER extract for 1983. For more information, see the datanotes-cps.txt file.
+
+   -  Data on tenure is from the CPS through IPUMS for 1996-2020, the ICPSR extract for 1987 and 1991, and the NBER extract for 1983.
+      - Note: during the early stage of our research, we discovered that tenure variables for earlier years in IPUMS were incorrectly coded. We think that these issues have been resolved, but have continued using NBER/ICPSR extracts for earlier years. For 1987 and 1991, we use the ICPSR extract, because the NBER extract appeared to be corrupted.
+   -  Data on the separation rates is from the Annual Social and Economic Supplements through IPUMS.
+   -  1996-2020 CPS tenure data from IPUMS.
+      -  Link to IPUMS website:  https://www.ipums.org/ 
+      - Variables: year, age, sex, educ, marst, empstat, classwkr, ind1990, occ1990, jtsuppwt, jtyears, and race.
+   -  NBER 1983
+      - NBER data codebook: http://data.nber.org/cps/cpsjan83.pdf
+      - NBER raw data: http://data.nber.org/cps/cpsjan83.zip
+      - Code for extracting necessary variables: dataclean_1983.do
+   -  ICPSR 1987
+      - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/8913/datadocumentation#
+      - Code for extracting necessary variables: dataclean_1987.do
+   -  ICPSR 1991
+      - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/9716
+      - Code for extracting necessary variables: dataclean_1991.do
+   -  1962-2020 separation rate data from the ASES through IPUMS
+      - Link to IPUMS website:  https://www.ipums.org/ 
+      - Samples: 1962-2020
+      - Variables: asecwt, age, empstat, wkswork2, numemps, sex, year
+   -  Cohort average separation rates are produced in cohort-effects-separations.do and -byage.do, and cohort average tenure rates are produced in cohort-effects-longtenure.do. The results from these three do files are saved in cohort-effects-separations-sex, cohort-effects-separations-men-byage, and cohort-effects-longtenure-sex. 
+
   
 - **Figures and Tables**
   - The tables and figures are generated using the correspondingly named stata do files. 
@@ -170,10 +192,10 @@
     - Online Appendix Figure 1, 2
     - Tables 2 and 4
     - Online Appendix Table 2
-  - The following figures and tables require estimates of cohort average long tenure and separation rates for various ages. Cohort average separation rates are produced in **cohort-effects-separations.do** and **-byage.do**, and cohort average tenure rates are produced in **cohort-effects-longtenure.do**.   
+  - The following figures and tables require estimates of cohort average long tenure and separation rates for various ages.
     - Figures 6, 8
     - Table 3 
-  - The following tables and figures require summary data from the SIPP, possibly in addition to CPS data.  See elsewhere in the repository for information on processing SIPP data.
+  - The following tables and figures require summary data from the SIPP and Figure 9 also requires CPS data.  See elsewhere in the repository for information on processing SIPP data.
     - Figures 5, 9, 11
     - Online Appendix Figure 5, 6
   - The following figure requires summary data from the GSS.  See elsewhere in the repository for information on processing GSS data.
