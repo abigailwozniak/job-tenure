@@ -89,19 +89,19 @@
   - The data files and dictionaries used to read in the raw data were all downloaded from the NBER website: https://www.nber.org/research/data/survey-income-and-program-participation-sipp. 
   
 - **Cleaning the data**
-  - **sipp96.do** - uses the raw 1996-2008 panel data to construct an appended dataset with data from 1996 to 2013 named **sipp9608.dta** and **tempsipp2.dta**.  
-  - **sipp8689.do** - uses the raw 1986-89 panels to construct an appended dataset **tempsipp80.dta**.  
+  - **sipp96.do** - uses the raw 1996-2008 panel data to construct an appended dataset with data from 1996 to 2013 named **sipp9608.dta** and **tempsipp2.dta**.
+  - **sipp8689.do** - uses the raw 1986-89 panels to construct an appended dataset **tempsipp80.dta** and updates and resaves **sipp8689.dta**.
   - **sipp9093.do** - reads in the 1990-93 panels and creates the appended dataset **tempsipp.dta**.
   
 - **Figure 1: mean and median tenure by year**
     - **sipp8689ten.do** - uses tempsipp80.dta, calculates mean and median tenure by year, and saves the results in fig1sipp8689.dta.
     - **fig1sipp.do** starts with sipp9609.dta, calculates mean and median tenure by year, appends fig1sipp8689.dta, and saves the resulting data in fig1sipp.dta.
-    - See the CPS_Materials section for the do files that use fig1sipp.dta to produce Figure 1 and 9.
+    - See the CPS_Materials section for the do files that use fig1sipp.dta and CPS data to produce Figure 1 and 9.
 - **Figure 5: Retention rates for men**
     - **sipp96nosep8.do** - uses sipp9608.dta, calculates the retention rate for men with 20+ years of tenure and saves the average retention rate over time in sipp96nosep8.dta.
-    - **sippeu_old.do** - uses tempsipp80.dta and tempsipp2.dta to calculate the fraction of employed men who transition from employed to unemployed and from employed to not-in-labor force and saves the results in sippeu_old.dta. 
-    - The line labeled “Fraction remaining employed, age 50-64” shows 1 –minus the sum of these two transition rates.
-    - Merge sipp96nosep8.dta and sippeu_old.dta on year and month to get fig5sipp.dta. See the CPS_Materials section for the do file that uses fig5sipp.dta to produce Figure 5.
+    - **sippeu_old.do** - uses tempsipp80.dta, tempsipp2.dta, and tempsipp.dta to calculate the fraction of employed men who transition from employed to unemployed and from employed to not-in-labor force and saves the results in sippeu_old.dta. 
+    - To get fig5sipp.dta, merge sipp96nosep8.dta and sippeu_old.dta on year and month, then generate new columns that are 1 – minus the sum of these two transition rates. Then, use fig5sipp.dta and a file in the CPS_Materials section to produce Figure 5.
+
 - **Figure 9: Percent of workers with less than 1 year of tenure and 1-3 years of tenure**
     - See Figure 1.
 - **Figure 11: Decomposition of new hires**
@@ -119,7 +119,7 @@
   - Raw GSS data were downloaded from https://gssdataexplorer.norc.org/. 
   
 - **Cleaning the data**
-  - **read_gss_jobtenure.do** - uses raw GSS data to output **read_gss_jobtenure.log** and **gss_jobtenure.dta**.
+  - **read_gss_jobtenure.do** - uses GSS.do and raw GSS data to output **read_gss_jobtenure.log** and **gss_jobtenure.dta**.
   
 - **Table 6, GSS columns**
   - Results for the GSS columns of **Table 6** are in 567-605 of **read_gss_jobtenure.log**.
@@ -135,7 +135,7 @@
 - **Cleaning the data**
   - **makedata_nlsy79.do** - uses the raw data from 1979-1994, cleans it, and outputs nlsy79_1979to1994.dta. This do file calls nlsy79_sp2019.dct, nlsy79_sp2019-value-labels.do, and rename_nlsy79_sp2019.do.
   - **makedata_nlsy97.do** - uses the raw data from 1997-2011, cleans it, and outputs nlsy97_1997to2011.dta. This do file also calls nlsy97_sp2019.dct, nlsy97_sp2019-value-labels.do, and rename_nlsy97_sp2019.do.
-  - **nlsy79_sp2019.dct**, **nlsy97_sp2019.dct**, **nlsy79_sp2019-value-labels.do** and **nlsy97_sp2019-value-labels.do** - provided by the NLS INvestigator website (link above) and can be used to repliacte the raw extracts.
+  - **nlsy79_sp2019.dct**, **nlsy97_sp2019.dct**, **nlsy79_sp2019-value-labels.do** and **nlsy97_sp2019-value-labels.do** - provided by the NLS Investigator website (link above) and can be used to repliacte the raw extracts.
   - **rename_nlsy79_sp2019.do** and **rename_nlsy97_sp2019.do** - quickly processes renaming the raw NLSY variables.
   
 - **Online Appendix Figure 4 and Online Appendix table 3**
