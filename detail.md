@@ -1,6 +1,7 @@
 ### Files
 
 - **SIPP_Materials**
+   - Afig5.do
    -Afig5.do
       -Fig1sipp.do
    -Sipp8689.do
