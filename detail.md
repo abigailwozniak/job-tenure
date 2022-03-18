@@ -1,84 +1,18 @@
-### Files
-- **SIPP_Materials**
-   - Afig5.do
-   - Fig1sipp.do
-   - Sipp8689.do
-   - Sipp8689ten.do
-   - Sipp9093.do
-   - Sipp96.do
-   - Sipp96ee.do
-   - Sipp96hires.do
-   - Sipp96nosep8.do
-   - Sippeu_old.do
-- **GSS_Materials**
-   - GSS.do
-   - Read_gss_jobtenure.do
-   - Read_gss_jobtenure.log
-- **NLSY_Materials**
-   - Make_tenure_whyleft.do
-   - Make_tenure_whyleft.log
-   - Make_tenure_whyleft_97.do
-   - Make_tenure_whyleft_97.log
-   - Makedata_nlsy79.do
-   - Makedata_nlsy79.log
-   - Makedata_nlsy97.do
-   - Makedata_nlsy97.log
-   - Nlsy79_sp2019-value-labels.do
-   - Nlsy97_sp2019-value-labels.do
-   - Rename_nlsy79_sp2019.do
-   - Rename_nlsy97_sp2019.do
-- **QEMP_Materials**
-   - Qemp.do
-   - Qemp6970.dct
-   - Qemp7273.dct
-   - Qemp77.dct
-- **CPS_Materials**
-   - Appendfig1.do
-   - Appendfig2.do
-   - Appendfig3.do
-   - Appendfig4.do
-   - Appendfig5.do
-   - Appendfig6.do
-   - Appendtable2.do
-   - Cohort-effects-longtenure.do
-   - Cohort-effects-separations-byage.do
-   - Cohort-effects-separations.do
-   - Dataclean_1993.do
-   - Dataclean_1987.do
-   - Dataclean_1991.do
-   - Datanotes-cps.txt
-   - Fig1.do
-   - Fig10.do
-   - Fig11.do
-   - Fig12.do
-   - Fig2.do
-   - Fig3.do
-   - Fig4.do
-   - Fig5.do
-   - Fig6_8.do
-   - Fig7.do
-   - Fig9.do
-   - Table1.do
-   - Table2_4.do
-   - Table3.do
-
-
-
 ### Repository Structure
 
 *The repository is structured as follows:*
 
 
 - **SIPP_Materials**
-  - Contains the do-files to produce the data used int Table 5; Figures 1, 5, 9, and 11; Online Appendix Figures 5, 6. 
+  - Contains the do-files to produce the data used in Table 5; Figures 1, 5, 9, and 11; Online Appendix Figures 5, 6. 
 - **GSS_Materials**
-  - Contains the do-files to reproduce the GSS columns in Table 6
+  - Contains the do-files to reproduce the GSS columns in Table 6 and Figure 12.
 - **NLSY_Materials**
-  - Contains the do-files to produce the data used for Online Appendix Figure 4 and Online Appendix Table 3
+  - Contains the do-files to produce the data used for Online Appendix Figure 4 and Online Appendix Table 3.
 - **QEMP_Materials**
-  - Contains the do-files that reproduce the QEMP columns of Table 6
+  - Contains the do-files that reproduce the QEMP columns of Table 6.
 - **CPS_Materials**
-  - Contains the do-files that reproduce Figures 1-12, Tables 1-4, Online Appendix Table 2; and Online Appendix Figures 1-6.
+  - Contains the do-files that reproduce Figures 1-4 and 6-10, Tables 1-4, Online Appendix Table 2; and Online Appendix Figures 1-3.
 
 
  
@@ -100,18 +34,18 @@
 - **Figure 5: Retention rates for men**
     - **sipp96nosep8.do** - uses sipp9608.dta, calculates the retention rate for men with 20+ years of tenure and saves the average retention rate over time in sipp96nosep8.dta.
     - **sippeu_old.do** - uses tempsipp80.dta, tempsipp2.dta, and tempsipp.dta to calculate the fraction of employed men who transition from employed to unemployed and from employed to not-in-labor force and saves the results in sippeu_old.dta. 
-    - To get fig5sipp.dta, merge sipp96nosep8.dta and sippeu_old.dta on year and month, then generate new columns that are 1 – minus the sum of these two transition rates. Then, use fig5sipp.dta and a file in the CPS_Materials section to produce Figure 5.
+    - To get fig5sipp.dta, merge sipp96nosep8.dta and sippeu_old.dta on year and month, then generate new columns that are 1 – minus the sum of these two transition rates. Then use Fig5.do to produce Figure 5.
 
 - **Figure 9: Percent of workers with less than 1 year of tenure and 1-3 years of tenure**
     - See Figure 1.
 - **Figure 11: Decomposition of new hires**
     - **sipp96hires.do** - uses tempsipp2.dta and calculates fraction of employed workers that are new hires (tenure less than 1 quarter), job-to-job flows (tenure less than 1 quarter and employed in the previous quarter), and flows from non-employment (tenure less than one quarter and not employed in the previous quarter), and outputs sipp96hires.dta 
-    - See the CPS_materials for the do files that use sipp96hires.dta to output Figure 11.
+    - Fig 11 was plotted using Fig11.do after renaming sipp96hires.dta as fig11sipp.dta.
 - **Table 5: Decomposition of the change in the aggregate job-to-job transition rate**
     - **sipp96ee.do** - uses tempsipp2.dta and calculates job-to-job flows by tenure category.  It then calculates counterfactual transition rates holding either the share of each tenure category at its pre-2000 level or the fraction of job-to-job flows for each tenure category at its pre-2000 level.  The actual and counterfactual job-to-job transition rates are then reported to make the table.
 - **Appendix Figure 5: Involuntary and Voluntary Separations in the SIPP**
   - **afig5.do** - uses sipp9608.dta and outputs figappend5.dta
-  - See the CPS_materials for the do files that use figappend5.dta to output Appendix Figure 5
+  - Appendix Figure 5 and Appendix Figure 6 were plotted using appendfig5.do, which calls figappend5.dta.
 
 ## GSS_Materials
 
@@ -119,13 +53,13 @@
   - Raw GSS data were downloaded from https://gssdataexplorer.norc.org/. 
   
 - **Cleaning the data**
-  - **read_gss_jobtenure.do** - uses GSS.do and raw GSS data to output **read_gss_jobtenure.log** and **gss_jobtenure.dta**.
+  - **read_gss_jobtenure.do** - uses GSS.do and raw GSS data plus annual unemployment rates from BLS to output **read_gss_jobtenure.log**, **gss_jobtenure.dta**, and djoblose_age_graph.dta.
   
 - **Table 6, GSS columns**
   - Results for the GSS columns of **Table 6** are in 567-605 of **read_gss_jobtenure.log**.
   
 - **Figure 12**
-  - See the CPS_materials for the do file that uses **gss_jobtenure.dta** to construct **Figure 12**.
+  - **Figure 12** was plotted using fig12.do after renaming djoblose_age_graph as fig12gss.dta.
 
 
 ## NLSY_Materials 
@@ -143,6 +77,7 @@
   - **make_tenure_whyleft_97.do** - uses nlsy97_1997to2011.dta to output results used in AF4 and AT3. 
   - Results for AF4 are in lines 3524 to 3540 of make_tenure_whyleft.log (for ’79) and of 2465 to 2478 for make_tenure_whyleft_97.log (for ’97).
   - Results for AT3 are in lines 3495 to 3505 of make_tenure_whyleft.log (for ’79) and of 2415 to 2424 for make_tenure_whyleft_97.log (for ’97). 
+  - Appendix Figure 4 is plotted using appendfig4.do in combination with the results above.
 
 
 ## QEMP_Materials
@@ -174,7 +109,7 @@
    -  ICPSR 1991
       - ICPSR codebook and data: https://www.icpsr.umich.edu/web/ICPSR/studies/9716
       - Code for extracting necessary variables: dataclean_1991.do
-   -  1962-2020 separation rate data from the ASES through IPUMS
+   -  1962-2020 separation rate data from the ASEC through IPUMS
       - Link to IPUMS website:  https://www.ipums.org/ 
       - Samples: 1962-2020
       - Variables: asecwt, age, empstat, wkswork2, numemps, sex, year
