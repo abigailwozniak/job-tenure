@@ -53,7 +53,7 @@
   - Raw GSS data were downloaded from https://gssdataexplorer.norc.org/. 
   
 - **Cleaning the data**
-  - **read_gss_jobtenure.do** - uses GSS.do and raw GSS data plus annual unemployment rates from BLS to output **read_gss_jobtenure.log**, **gss_jobtenure.dta**, and djoblose_age_graph.dta.
+  - **read_gss_jobtenure.do** - uses GSS.do and raw GSS data plus annual unemployment rates from BLS to output **read_gss_jobtenure.log**, gss_jobtenure.dta, and djoblose_age_graph.dta.
   
 - **Table 6, GSS columns**
   - Results for the GSS columns of **Table 6** are in 567-605 of **read_gss_jobtenure.log**.
